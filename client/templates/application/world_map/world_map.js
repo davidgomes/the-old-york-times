@@ -21,22 +21,9 @@ Template.worldMap.rendered = function () {
     element: document.getElementById('map-container'),
     responsive: true,
 
-    /*fills: {
-     northAmerica: '#e67e22',
-     southAmerica: '#f1c40f'
-     },
-     data: {
-     USA: {region: 'northAmerica'},
-     CAN: {region: 'northAmerica'},
-     BRA: {region: 'southAmerica'},
-     MEX: {region: 'southAmerica'}
-     },*/
-
     geographyConfig: {
       popupTemplate: function (geo, data) {
         var countryID = geo.id === "-99" ? geo.properties.name : geo.id; // handle Kosovo, Somaliland, etc.
-
-        console.log(countryID);
 
         var countryRegion = getCountryRegion(countryID);
 
@@ -68,6 +55,33 @@ Template.worldMap.rendered = function () {
   });
 
   $('.datamaps-subunit').mouseleave(resetColors);
+
+  $('.datamaps-subunit').mousedown(function (evt) {
+    var countryRegion = getCountryRegion(evt.currentTarget.classList[1]);
+
+    $.each(regions, function (regionName, regionObject) {
+      if (regionName !== countryRegion) {
+        $.each(regionObject.countries, function (index, element) {
+          d3.select('.datamaps-subunit.' + element).remove();
+
+          var zoom = d3.behavior.zoom();
+          d3.select('.datamaps-subunit.' + element).call(zoom);
+          zoom.scale(3);
+        });
+      } else {
+        $.each(regionObject.countries, function (index, element) {
+          console.log(element);
+
+          d3.select('.datamaps-subunit.' + element).attr('transform', 'scale(2) translate(-500, -50)');
+        });
+      }
+    });
+  });
+
+  $(window).keydown(function (evt) {
+
+  });
+
   resetColors();
 
   $(window).on('resize', function () {
