@@ -55,7 +55,7 @@ Template.slider.rendered = function () {
 
     pips: {
       mode: 'values',
-      values: [timestamp('1900'), timestamp('2016')],
+      values: [timestamp('1500'), timestamp('1900'), timestamp('2016')],
       density: 4
     }
   });
@@ -69,6 +69,7 @@ Template.slider.rendered = function () {
     dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
   });
 
-  $('.noUi-value').first().text('1900');
-  $('.noUi-value').last().text('2016');
+  $('.noUi-value').eq(0).text('1500');
+  $('.noUi-value').eq(1).text('1900');
+  $('.noUi-value').eq(2).text('2016');
 };
