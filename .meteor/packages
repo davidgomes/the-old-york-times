@@ -19,3 +19,5 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 kadira:flow-router
 kadira:blaze-layout
 hyperborea:datamaps
+fourseven:scss
+chuikoff:bootstrap-4

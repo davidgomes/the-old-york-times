@@ -61,13 +61,11 @@ Template.slider.rendered = function () {
 
 
   var dateValues = [
-    document.getElementById('event-start'),
-    document.getElementById('event-end')
+    document.getElementById('range-start'),
+    document.getElementById('range-end')
   ];
 
   slider.noUiSlider.on('update', function( values, handle ) {
-    console.log(values[handle]);
-
     dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
   });
 
