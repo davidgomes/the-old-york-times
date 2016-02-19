@@ -42,7 +42,8 @@ Template.slider.rendered = function () {
   noUiSlider.create(slider, {
     range: {
       'min': [ timestamp('1500') ],
-      '80%': [ timestamp('2016') ],
+      '40%': [ timestamp('1900') ],
+      '90%': [ timestamp('2016') ],
       'max': [ (new Date ()).getTime() ]
     },
 
@@ -54,11 +55,10 @@ Template.slider.rendered = function () {
 
     pips: {
       mode: 'values',
-      values: [timestamp('2016')],
+      values: [timestamp('1900'), timestamp('2016')],
       density: 4
     }
   });
-
 
   var dateValues = [
     document.getElementById('range-start'),
@@ -69,5 +69,6 @@ Template.slider.rendered = function () {
     dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
   });
 
-  $('.noUi-value').text('2016');
+  $('.noUi-value').first().text('1900');
+  $('.noUi-value').last().text('2016');
 };
