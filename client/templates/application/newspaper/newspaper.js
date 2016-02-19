@@ -21,7 +21,8 @@ Template.newspaper.events({
         res.forEach((item) => {
           console.log(item);
           SelectedNews.insert({
-            headline: item.headline
+            headline: item.headline,
+            date: item.date
           });
         });
       }

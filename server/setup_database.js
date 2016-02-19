@@ -13,7 +13,8 @@ setupDatabase = function (){
         country: dc.country,
         source: dc.source,
         category: dc.category,
-        score: 0
+        score: 0,
+        sort_id: (Math.floor((Math.random() * 120000) + 1))
       });
 
       if (i % 1000 == 0) {
