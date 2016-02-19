@@ -1,15 +1,26 @@
+setupDatabase = function (){
+  News._ensureIndex({ "date": 1 });
 
-
-setupDatabase = function(){
-  if(News.find().count() == 0){
+  if (News.find().count() == 0){
     var data = Assets.getText('final-database.json');
     docs = JSON.parse(data);
-    for(i=0; i<docs.length; i++){
-      News.insert(docs[i]);
-      if(i % 1000 == 0)
-        console.log(i)
+    for (var i = 0; i < docs.length; i++) {
+      const dc = docs[i];
+      News.insert({
+        headline: dc.headline,
+        date: new Date(dc.date),
+        region: dc.region,
+        country: dc.country,
+        source: dc.source,
+        category: dc.category,
+        score: 0
+      });
+
+      if (i % 1000 == 0) {
+        console.log(i);
+      }
     }
   }
 
   console.log('Database ready.');
-}
+};
