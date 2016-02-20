@@ -130,8 +130,8 @@ Template.worldMap.rendered = function () {
 
   resetColors();
 
-  $('.datamaps-subunit.GRL').hide();
-  $('.datamaps-subunit.ATF').hide();
+  d3.select('.datamaps-subunit.GRL').remove();
+  d3.select('.datamaps-subunit.ATF').remove();
 
   $(window).on('resize', function () {
     map.resize();

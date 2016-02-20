@@ -65,8 +65,30 @@ Template.slider.rendered = function () {
     document.getElementById('range-end')
   ];
 
-  slider.noUiSlider.on('update', function( values, handle ) {
+  slider.noUiSlider.on('update', function (values, handle) {
     dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
+
+    console.log();
+
+    /*Meteor.call('News.methods.getNews', {
+      startYear: new Date("1940-01-01"),
+      endYear: new Date("1945-01-01"),
+      region: "Europe"
+    }, (err, res) => {
+      if (err) {
+        alert(err);
+      } else {
+        SelectedNews.remove({ });
+        console.log(res);
+        res.forEach((item) => {
+          console.log(item);
+          SelectedNews.insert({
+            headline: item.headline,
+            date: item.date
+          });
+        });
+      }
+    });*/
   });
 
   $('.noUi-value').eq(0).text('1500');
