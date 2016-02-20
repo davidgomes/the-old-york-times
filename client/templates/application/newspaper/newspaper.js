@@ -8,12 +8,12 @@ Template.newspaper.helpers({
 
 Template.newspaper.events({
   'click #btn-news': function() {
-    console.log(dateSearchValues[0], dateSearchValues[1]);
+    console.log(regions[currentRegion].name);
 
     Meteor.call('News.methods.getNews', {
       startYear: new Date(+dateSearchValues[0]),
       endYear: new Date(+dateSearchValues[1]),
-      region: "Europe"
+      region: regions[currentRegion].name
     }, (err, res) => {
       if (err) {
         alert(err);

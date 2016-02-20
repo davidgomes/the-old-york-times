@@ -24,7 +24,7 @@ var leaveWorldState = function () {
 }
 
 var state = "world";
-var currentRegion = null;
+currentRegion = null;
 
 Template.worldMap.rendered = function () {
   $.each(Datamaps.prototype.worldTopo.objects.world.geometries, function (index, element) {
