@@ -57,19 +57,19 @@ Template.results.helpers({
   },
 
   newsLocation: function () {
-    if (currentRegion === "World") {
+    if (Session.get("WorldVar") === "World") {
       return "the entire World";
     } else {
-      return regions[currentRegion].name;
+      return regions[Session.get("WorldVar")].name;
     }
   },
 
   rangeFirst: function () {
-    return new Date(+dateSearchValues[0]);
+    return printDate(new Date(+Session.get("DateStart")));
   },
 
   rangeSecond: function () {
-    return new Date(+dateSearchValues[1]);
+    return printDate(new Date(+Session.get("DateEnd")));
   }
 });
 

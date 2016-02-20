@@ -35,6 +35,8 @@ function timestamp (str) {
 }
 
 dateSearchValues = [];
+Session.set("DateStart", new Date("01-01-2011"));
+Session.set("DateEnd", new Date("01-01-2015"));
 
 Template.slider.rendered = function () {
   var slider = document.getElementById('slider');
@@ -68,6 +70,12 @@ Template.slider.rendered = function () {
   slider.noUiSlider.on('update', function (values, handle) {
     dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
     dateSearchValues[handle] = values[handle];
+
+    if (handle == 0) {
+      Session.set("DateStart", values[0]);
+    } else if (handle == 1) {
+      Session.set("DateEnd", values[1]);
+    }
   });
 
   $('.noUi-value').eq(0).text('1500');

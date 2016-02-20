@@ -15,6 +15,7 @@ var leaveWorldState = function () {
 
   state = "world";
   currentRegion = "World";
+  Session.set("WorldVar", "World");
 
   $('#map-container').css('margin-top', '0');
 
@@ -34,6 +35,7 @@ var leaveWorldState = function () {
 
 var state = "world";
 currentRegion = "World";
+Session.set("WorldVar", "World");
 var dx, dy;
 
 Template.worldMap.rendered = function () {
@@ -94,6 +96,7 @@ Template.worldMap.rendered = function () {
     if (state === "world") {
       var countryRegionObject = regions[countryRegion];
       currentRegion = countryRegion;
+      Session.set("WorldVar", currentRegion);
 
       if (countryRegionObject.addTopMargin) {
         $('#map-container').css('margin-top', '70px');
