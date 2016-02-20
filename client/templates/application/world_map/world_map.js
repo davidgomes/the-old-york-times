@@ -90,7 +90,7 @@ Template.worldMap.rendered = function () {
         }
 
         if (state === "country") {
-          //$('.datamaps-subunit.' + currentCountry).css('fill', regions[getCountryRegion(currentCountry)].hoverColor);
+          $('.datamaps-subunit.' + countryID).css('fill', regions[countryRegion].hoverColor);
         }
 
         if (state === "world") {
@@ -141,15 +141,24 @@ Template.worldMap.rendered = function () {
       if (countryRegion !== currentRegion) {
         leaveWorldState();
       } else { // pick actual country
-        if (currentCountryID !== null) {
+        var countryID = evt.currentTarget.classList[1];
+
+        if (countryID === currentCountryID) {
           $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].color);
+          currentCountryID = null;
+
+          state = "region";
+        } else {
+          if (currentCountryID !== null) {
+            $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].color);
+          }
+
+          currentCountryID = countryID;
+
+          state = "country";
+
+          $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].countryColor);
         }
-
-        currentCountryID = evt.currentTarget.classList[1];
-
-        state = "country";
-
-        $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].hoverColor);
       }
     }
 
@@ -164,7 +173,7 @@ Template.worldMap.rendered = function () {
 
   $('#map-container').mousemove(function () {
     if (currentCountryID !== null) {
-      $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].hoverColor);
+      $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].countryColor);
     }
   });
 
