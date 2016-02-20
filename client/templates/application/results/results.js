@@ -77,14 +77,14 @@ Template.results.events({
   'click #btn-news': function() {
     var regionName;
 
-    if (currentCountryID !== null) {
+    if (currentCountryID === null) {
       if (currentRegion === "World") {
         regionName = "World";
       } else {
         regionName = regions[currentRegion].name;
       }
     } else {
-      regionName = getCountryNameFromID();
+      regionName = getCountryNameFromID(currentCountryID);
     }
 
     const fromDate = new Date(+dateSearchValues[0]);
