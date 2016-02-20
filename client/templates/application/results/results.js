@@ -35,6 +35,22 @@ const sourceText = function (source) {
 Template.results.helpers({
   showNewspaper: function () {
     return Session.get("showNewspaper");
+  },
+
+  newsLocation: function () {
+    if (currentRegion === "World") {
+      return "the entire World";
+    } else {
+      return regions[currentRegion].name;
+    }
+  },
+
+  rangeFirst: function () {
+    return new Date(+dateSearchValues[0]);
+  },
+
+  rangeSecond: function () {
+    return new Date(+dateSearchValues[1]);
   }
 });
 

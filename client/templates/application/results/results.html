@@ -3,7 +3,9 @@
     {{> slider}}
     {{> worldMap}}
 
-    <button type="button" id="btn-news" class="btn btn-primary btn-block">Get News</button>
+    <button type="button" id="btn-news" class="btn btn-primary">Get News</button>
+
+    <p id="search-description">(sarching for news in {{newsLocation}} from {{rangeFirst}} to {{rangeSecond}})</p>
 
     {{#if showNewspaper}}
       {{> newspaper}}
