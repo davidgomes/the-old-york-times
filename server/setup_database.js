@@ -6,6 +6,7 @@ setupDatabase = function (){
     docs = JSON.parse(data);
     for (var i = 0; i < docs.length; i++) {
       const dc = docs[i];
+
       News.insert({
         headline: dc.headline,
         date: new Date(dc.date),
@@ -14,7 +15,7 @@ setupDatabase = function (){
         source: dc.source,
         category: dc.category,
         score: 0,
-        sort_id: (Math.floor((Math.random() * 120000) + 1))
+        sort_id: (Math.floor((Math.random() * 12000) + 1))
       });
 
       if (i % 1000 == 0) {

@@ -6,7 +6,7 @@
 
     <ul>
       {{#each news}}
-      <li>{{date}} : {{headline}}</li>
+      <li class="news-{{category}}">{{category}} - {{date}} : {{headline}}, from {{source}}</li>
       {{/each}}
     </ul>
   </div>
