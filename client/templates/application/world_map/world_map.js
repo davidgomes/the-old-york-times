@@ -13,6 +13,12 @@ var resetColors = function () {
 var leaveWorldState = function () {
   var countryRegionObject = regions[currentRegion];
 
+  if (currentCountryID !== null) {
+    $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].color);
+  }
+
+  currentCountryID = null;
+
   state = "world";
   currentRegion = "World";
   Session.set("WorldVar", "World");
@@ -135,6 +141,10 @@ Template.worldMap.rendered = function () {
       if (countryRegion !== currentRegion) {
         leaveWorldState();
       } else { // pick actual country
+        if (currentCountryID !== null) {
+          $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].color);
+        }
+
         currentCountryID = evt.currentTarget.classList[1];
 
         state = "country";
@@ -146,7 +156,7 @@ Template.worldMap.rendered = function () {
     evt.stopPropagation();
   });
 
-  $(window).keydown(function (evt) {
+  $('#map-container').keydown(function (evt) {
     if (evt.keyCode === 27) {
       leaveWorldState();
     }
@@ -154,7 +164,6 @@ Template.worldMap.rendered = function () {
 
   $('#map-container').mousemove(function () {
     if (currentCountryID !== null) {
-      console.log('uo');
       $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].hoverColor);
     }
   });
