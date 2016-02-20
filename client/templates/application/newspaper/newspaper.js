@@ -29,6 +29,15 @@ const categoryShort = function (category) {
   }
 };
 
+const sourceText = function (source) {
+  switch (source) {
+  case "https://en.wikipedia.org":
+    return "Wikipedia";
+  default:
+    return "OnThisDay";
+  }
+};
+
 Template.newspaper.events({
   'click #btn-news': function() {
     var regionName;
@@ -53,7 +62,9 @@ Template.newspaper.events({
             headline: item.headline,
             date: printDate(item.date),
             category: categoryShort(item.category),
-            source: item.source
+            categoryText: item.category,
+            source: item.source,
+            sourceText: sourceText(item.source)
           });
         });
       }

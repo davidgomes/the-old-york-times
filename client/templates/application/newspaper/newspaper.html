@@ -1,13 +1,51 @@
 <template name="newspaper">
+  <button type="button" id="btn-news" class="btn btn-primary">Get News</button>
+
   <div id="newspaper">
-    <h1>The Old York Times</h1>
+    <div id="news-header">
+      <div class="row">
+        <div class="col-md-2 news-box news-box-small">"All the News<br />That's Fit to Display"</div>
+        <div id="news-title" class="col-md-8">The Old York Times</div>
+        <div class="col-md-2 news-box news-box-big">Shift Edition</div>
+      </div>
+    </div>
 
-    <button type="button" id="btn-news" class="btn btn-primary">Get News</button>
+    <div id="news-bar">
+      <hr />
+      <div class="row">
+        <div class="col-md-3 news-bar-left">&#169; TOYT</div>
+        <div class="col-md-6 news-bar-center">Europe, 13 <span class="small-font">of</span> January 2014 <span class="small-font">to</span> 23 <span class="small-font">of</span> February 2016</div>
+        <div class="col-md-3 news-bar-right">30.00 Shift Coins</div>
+      </div>
+    <hr />
+    </div>
 
-    <ul>
-      {{#each news}}
-      <li class="news-{{category}}">{{category}} - {{date}} : {{headline}}, from {{source}}</li>
-      {{/each}}
-    </ul>
+    <div class="container-fluid">	
+      <div class="card-columns">
+        {{#each news}}
+        <div class="card news-article">
+          <div class="card-block">
+            <div class="row"><div class="col-md-6 col-md-offset-3"><hr /></div></div>
+            <h4 class="card-title">{{categoryText}}</h4>
+            <div class="row"><div class="col-md-6 col-md-offset-3"><hr /></div></div>
+            <p class="card-text news-source">By <a href="{{source}}" target="_blank">{{sourceText}}</a></p>
+            <p class="card-text">{{headline}}</p>
+            <p class="card-text"><small class="text-muted">On the {{date}}</small></p>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <hr />
+
+    <div id="footer-bar"></div>
+
+    <div id="footer-zone">
+      <div class="row">
+        <div class="col-md-4 barcode">01482032</div>
+        <div class="col-md-8 footer-text">ShiftAppens 2016 - TOYT - Hackathon101</div>
+      </div>
+    </div>
   </div>
 </template>
