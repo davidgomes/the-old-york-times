@@ -12,6 +12,7 @@ var resetColors = function () {
 
 var leaveWorldState = function () {
   state = "world";
+  currentRegion = "World";
 
   $('#map-container').css('margin-top', '0');
 
@@ -24,7 +25,7 @@ var leaveWorldState = function () {
 }
 
 var state = "world";
-currentRegion = null;
+currentRegion = "World";
 
 Template.worldMap.rendered = function () {
   $.each(Datamaps.prototype.worldTopo.objects.world.geometries, function (index, element) {
