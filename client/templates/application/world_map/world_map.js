@@ -10,7 +10,21 @@ var resetColors = function () {
   });
 };
 
+var leaveWorldState = function () {
+  state = "world";
+
+  $('#map-container').css('margin-top', '0');
+
+  $.each(regions, function (regionName, regionObject) {
+    $.each(regionObject.countries, function (index, element) {
+      $('.datamaps-subunit.' + element).show().attr('transform', 'scale(1)');
+      $('.datamaps-subunit.' + element).css({ 'opacity': '1' });
+    });
+  });
+}
+
 var state = "world";
+var currentRegion = null;
 
 Template.worldMap.rendered = function () {
   $.each(Datamaps.prototype.worldTopo.objects.world.geometries, function (index, element) {
@@ -60,10 +74,16 @@ Template.worldMap.rendered = function () {
 
   $('.datamaps-subunit').mouseleave(resetColors);
 
+  $('#map-container').click(function (evt) {
+    leaveWorldState();
+  });
+
   $('.datamaps-subunit').click(function (evt) {
+    var countryRegion = getCountryRegion(evt.currentTarget.classList[1]);
+
     if (state === "world") {
-      var countryRegion = getCountryRegion(evt.currentTarget.classList[1]);
       var countryRegionObject = regions[countryRegion];
+      currentRegion = countryRegion;
 
       if (countryRegionObject.addTopMargin) {
         $('#map-container').css('margin-top', '70px');
@@ -92,22 +112,19 @@ Template.worldMap.rendered = function () {
 
       state = "region";
     } else {
-      // TODO check if is inside current region, if not do the ESC thing
+      if (countryRegion !== currentRegion) {
+        leaveWorldState();
+      } else { // pick actual country
+        console.log('Selected country called ' + evt.currentTarget.classList[1]);
+      }
     }
+
+    evt.stopPropagation();
   });
 
   $(window).keydown(function (evt) {
     if (evt.keyCode === 27) {
-      state = "world";
-
-      $('#map-container').css('margin-top', '0');
-
-      $.each(regions, function (regionName, regionObject) {
-        $.each(regionObject.countries, function (index, element) {
-          $('.datamaps-subunit.' + element).show().attr('transform', 'scale(1)');
-          $('.datamaps-subunit.' + element).css({ 'opacity': '1' });
-        });
-      });
+      leaveWorldState();
     }
   });
 
