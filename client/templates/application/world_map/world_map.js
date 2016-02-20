@@ -60,35 +60,48 @@ Template.worldMap.rendered = function () {
 
   $('.datamaps-subunit').mouseleave(resetColors);
 
-  $('.datamaps-subunit').mousedown(function (evt) {
+  $('.datamaps-subunit').click(function (evt) {
     if (state === "world") {
       var countryRegion = getCountryRegion(evt.currentTarget.classList[1]);
+      var countryRegionObject = regions[countryRegion];
+
+      //$('#map-container').css('margin-top', '70px');
 
       $.each(regions, function (regionName, regionObject) {
         if (regionName !== countryRegion) {
           $.each(regionObject.countries, function (index, element) {
-            d3.select('.datamaps-subunit.' + element).remove();
+            //d3.select('.datamaps-subunit.' + element).hide();
+            $('.datamaps-subunit.' + element).css({ 'opacity': '0.3 '});
 
             var zoom = d3.behavior.zoom();
             d3.select('.datamaps-subunit.' + element).call(zoom);
             zoom.scale(3);
+
+            d3.select('.datamaps-subunit.' + element).attr('transform', `scale(2) translate(${countryRegionObject.translate.x * $('#map-container').width()}, ${countryRegionObject.translate.y * $('#map-container').innerHeight()})`);
           });
         } else {
           $.each(regionObject.countries, function (index, element) {
-            d3.select('.datamaps-subunit.' + element).attr('transform', 'scale(2) translate(-500, -50)');
+            console.log($('#map-container').height());
+
+            d3.select('.datamaps-subunit.' + element).attr('transform', `scale(2) translate(${regionObject.translate.x * $('#map-container').width()}, ${regionObject.translate.y * $('#map-container').innerHeight()})`);
           });
         }
       });
 
       state = "region";
     } else {
-
     }
   });
 
   $(window).keydown(function (evt) {
-    if (evt.keyCode === 17) {
+    if (evt.keyCode === 27) {
       state = "world";
+
+      $.each(regions, function (regionName, regionObject) {
+        $.each(regionObject.countries, function (index, element) {
+          $('.datamaps-subunit.' + element).show().attr('transform', 'scale(1)');
+        });
+      });
     }
   });
 
