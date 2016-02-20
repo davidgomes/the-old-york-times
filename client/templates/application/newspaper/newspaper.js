@@ -1,3 +1,35 @@
+const convertEpoch = function (date) {
+  if (date < 1900) {
+    return "medieval";
+  } else if (date < 2000) {
+    return "classic";
+  } else {
+    return "modern";
+  }
+};
+
+const convertMoney = function (date) {
+  if (date < 1900) {
+    return 20.00;
+  } else if (date < 1920) {
+    return 15.00;
+  } else if (date < 1930) {
+    return 115.00;
+  } else if (date < 1960) {
+    return 40.00;
+  } else if (date < 1990) {
+    return 60.00;
+  } else if (date < 1990) {
+    return 60.00;
+  } else if (date < 2000) {
+    return 80.00;
+  } else if (date < 2010) {
+    return 120.00;
+  } else {
+    return 200.00;
+  }
+};
+
 Template.newspaper.helpers({
   news: function () {
     return SelectedNews.find({ }, { sort: { date: 1 } }).fetch();
@@ -11,6 +43,9 @@ Template.newspaper.helpers({
   mainHeadline: function () {
     return Session.get("mainNews").headline;
   },
+  mainRegion: function () {
+    return Session.get("mainNews").region;
+  },
   mainText: function () {
     return Session.get("mainNews").text;
   },
@@ -19,6 +54,27 @@ Template.newspaper.helpers({
   },
   mainDate: function () {
     return Session.get("mainNews").date;
+  },
+  location: function () {
+    return Session.get("newsObject").location;
+  },
+  fromDay: function () {
+    return Session.get("newsObject").fromDay;
+  },
+  fromDate: function () {
+    return Session.get("newsObject").fromDate;
+  },
+  toDay: function () {
+    return Session.get("newsObject").toDay;
+  },
+  toDate: function () {
+    return Session.get("newsObject").toDate;
+  },
+  epoch: function () {
+    return convertEpoch(Session.get("newsObject").epoch);
+  },
+  money: function () {
+    return convertMoney(Session.get("newsObject").epoch);
   }
 });
 

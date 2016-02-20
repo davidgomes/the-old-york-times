@@ -32,6 +32,25 @@ const sourceText = function (source) {
   }
 };
 
+const parseOrdinal = function (date) {
+  switch (date) {
+  case "1":
+  case "21":
+  case "31":
+    return "1st";
+  case "2":
+  case "22":
+    return "2nd";
+  case "3":
+  case "23":
+  case "4":
+  case "24":
+    return date + "rd";
+  default:
+    return date + "th";
+  }
+};
+
 Template.results.helpers({
   showNewspaper: function () {
     return Session.get("showNewspaper");
@@ -63,6 +82,17 @@ Template.results.events({
     } else {
       regionName = regions[currentRegion].name;
     }
+
+    const fromDate = new Date(+dateSearchValues[0]);
+    const toDate = new Date(+dateSearchValues[1]);
+    Session.set("newsObject", {
+      epoch: Math.floor((fromDate.getFullYear() + toDate.getFullYear()) / 2),
+      location: regionName,
+      fromDay: parseOrdinal(fromDate.getDate().toString()),
+      fromDate: (monthList[fromDate.getMonth().toString()] + " " + fromDate.getFullYear().toString()),
+      toDay: parseOrdinal(toDate.getDate().toString()),
+      toDate: (monthList[toDate.getMonth().toString()] + " " + toDate.getFullYear().toString())
+    });
 
     Meteor.call('News.methods.getNews', {
       startYear: new Date(+dateSearchValues[0]),
