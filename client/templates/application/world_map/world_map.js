@@ -71,7 +71,7 @@ Template.worldMap.rendered = function () {
         if (regionName !== countryRegion) {
           $.each(regionObject.countries, function (index, element) {
             //d3.select('.datamaps-subunit.' + element).hide();
-            $('.datamaps-subunit.' + element).css({ 'opacity': '0.3 '});
+            $('.datamaps-subunit.' + element).css({ 'opacity': '0.3' });
 
             var zoom = d3.behavior.zoom();
             d3.select('.datamaps-subunit.' + element).call(zoom);
@@ -100,6 +100,7 @@ Template.worldMap.rendered = function () {
       $.each(regions, function (regionName, regionObject) {
         $.each(regionObject.countries, function (index, element) {
           $('.datamaps-subunit.' + element).show().attr('transform', 'scale(1)');
+          $('.datamaps-subunit.' + element).css({ 'opacity': '1' });
         });
       });
     }
