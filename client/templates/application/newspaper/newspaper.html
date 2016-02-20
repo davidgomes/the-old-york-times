@@ -1,4 +1,6 @@
 <template name="newspaper">
+  <div id="back-arrow"><a href="#" id="black-arrow-link"><i class="fa fa-arrow-circle-up"></i></a></div>
+
   <div id="newspaper" class="newspaper-{{epoch}}">
     <div id="news-header">
       <div class="row">
@@ -11,7 +13,7 @@
     <div id="news-bar">
       <hr />
       <div class="row">
-        <div class="col-md-3 news-bar-left">ISSUE 1, &#169; 2016 The Old York Times</div>
+        <div class="col-md-3 news-bar-left">ISSUE 1 - &#169; 2016 The Old York Times</div>
         <div class="col-md-6 news-bar-center">{{location}}, {{fromDay}} <span class="small-font">of</span> {{fromDate}} <span class="small-font">to</span> {{toDay}} <span class="small-font">of</span> {{toDate}}</div>
         <div class="col-md-3 news-bar-right">{{money}} Shift Coins</div>
       </div>
@@ -72,5 +74,42 @@
       <p class="card-text"><small class="text-muted">By <a href="{{source}}" target="_blank">{{sourceText}}</a> in {{region}} on the {{date}}</small></p>
     </div>
     <hr />
+  </div>
+</template>
+
+<template name="emptyNewspaper">
+  <div id="newspaper" class="newspaper-{{epoch}}">
+    <div id="news-header">
+      <div class="row">
+        <div class="col-md-2 news-box news-box-small">"All the News<br />That's Fit to Display"</div>
+        <div id="news-title" class="col-md-8">The Old York Times</div>
+        <div class="col-md-2 news-box news-box-big">Shift Edition</div>
+      </div>
+    </div>
+
+    <div id="news-bar">
+      <hr />
+      <div class="row">
+        <div class="col-md-3 news-bar-left">ISSUE 1 -  &#169; 2016 The Old York Times</div>
+        <div class="col-md-6 news-bar-center">{{location}}, {{fromDay}} <span class="small-font">of</span> {{fromDate}} <span class="small-font">to</span> {{toDay}} <span class="small-font">of</span> {{toDate}}</div>
+        <div class="col-md-3 news-bar-right">{{money}} Shift Coins</div>
+      </div>
+      <hr />
+    </div>
+
+    <div id="empty-news">
+      ~ {{emptyText}} ~
+    </div>
+
+    <hr />
+
+    <div id="footer-bar"></div>
+
+    <div id="footer-zone">
+      <div class="row">
+        <div class="col-md-4 barcode">01482032</div>
+        <div class="col-md-8 footer-text">ShiftAppens 2016 - TOYT - Hackathon101</div>
+      </div>
+    </div>
   </div>
 </template>

@@ -78,6 +78,17 @@ Template.newspaper.helpers({
   }
 });
 
+const hideArrow = function () {
+  $("#back-arrow").hide();
+};
+
+Template.newspaper.events({
+  'click #black-arrow-link': function () {
+    $('html, body').animate({scrollTop: 0 }, 1000);
+    hideArrow();
+  }
+});
+
 Template.newspaper.rendered = function () {
   //Session.set('showNewspaper', true);
   $('html, body').animate({scrollTop: $('#newspaper').offset().top + 3 }, 2000);
@@ -86,5 +97,32 @@ Template.newspaper.rendered = function () {
 Template.newsArticle.helpers({
   img: function () {
     return this.img;
+  }
+});
+
+Template.emptyNewspaper.helpers({
+  location: function () {
+    return Session.get("newsObject").location;
+  },
+  fromDay: function () {
+    return Session.get("newsObject").fromDay;
+  },
+  fromDate: function () {
+    return Session.get("newsObject").fromDate;
+  },
+  toDay: function () {
+    return Session.get("newsObject").toDay;
+  },
+  toDate: function () {
+    return Session.get("newsObject").toDate;
+  },
+  epoch: function () {
+    return convertEpoch(Session.get("newsObject").epoch);
+  },
+  money: function () {
+    return convertMoney(Session.get("newsObject").epoch);
+  },
+  emptyText: function () {
+    return Session.get("emptyText");
   }
 });

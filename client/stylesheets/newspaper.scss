@@ -1,5 +1,30 @@
 .newspaper-medieval {
+  background-image: url('/img/old_med.jpg');
+  background-repeat: repeat;
 
+  .card {
+    background: none;
+  }
+
+  .text-muted {
+    color: #A09148;
+
+    a {
+      color: #77775B;
+
+      &:hover {
+        color: #565642;
+      }
+    }
+  }
+
+  #footer-bar {
+    background-color: #CCAA4D !important;
+  }
+
+  #footer-zone {
+    display: none;
+  }
 }
 
 .newspaper-classic {
@@ -12,6 +37,12 @@
 }
 
 .newspaper-modern {
+  background-image: url('/img/recent_paper.png');
+  background-repeat: repeat;
+
+  .card {
+    background: none;
+  }
 }
 
 #newspaper {
@@ -143,6 +174,13 @@
     font-size: 0.7em;
     line-height: 96px;
   }
+
+  #empty-news {
+    text-align: center;
+    font-family: FenixRegular;
+    font-variant: small-caps;
+    font-size: 3em;
+  }
 }
 
 .news-arts {
@@ -159,4 +197,11 @@
 
 .news-world {
   background-color: #BBB;
+}
+
+#back-arrow {
+  font-size: 4em;
+  position: fixed;
+  top: 2%;
+  right: 2%;
 }

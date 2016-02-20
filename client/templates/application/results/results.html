@@ -8,7 +8,11 @@
     <p id="search-description">(sarching for news in {{newsLocation}} from {{rangeFirst}} to {{rangeSecond}})</p>
 
     {{#if showNewspaper}}
-      {{> newspaper}}
+      {{#if showEmpty}}
+        {{> emptyNewspaper}}
+      {{else}}
+        {{> newspaper}}
+      {{/if}}
     {{/if}}
   </div>
 </template>

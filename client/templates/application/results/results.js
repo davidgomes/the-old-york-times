@@ -1,7 +1,13 @@
 SelectedNews = new Mongo.Collection(null);
 
+Session.set("newsEmpty", false);
 const monthList = ["January", "February", "March", "April", "May", "June",
                    "July", "August", "September", "October", "November", "December"];
+const sentences = ["The annals of history know nothing about this",
+                  "It seems like you've reached a forgotten piece of our existence",
+                   "So far nothing happened in this period... Maybe tomorrow",
+                  "A secret organization erased all records of this time. Proceed with caution",
+                  "Well, nice try, but this was a slow time"];
 const printDate = function (date) {
   const dateStr = date.getDate().toString() + " of " +
           monthList[date.getMonth().toString()] + ", " +
@@ -51,6 +57,10 @@ const parseOrdinal = function (date) {
   }
 };
 
+const showArrow = function () {
+  $("#back-arrow").show();
+};
+
 Template.results.helpers({
   showNewspaper: function () {
     return Session.get("showNewspaper");
@@ -70,11 +80,15 @@ Template.results.helpers({
 
   rangeSecond: function () {
     return printDate(new Date(+Session.get("DateEnd")));
+  },
+
+  showEmpty: function () {
+    return Session.get("newsEmpty");
   }
 });
 
 Template.results.events({
-  'click #btn-news': function() {
+  'click #btn-news' : function () {
     var regionName;
 
     if (currentRegion === "World") {
@@ -102,6 +116,13 @@ Template.results.events({
       if (err) {
         alert(err);
       } else {
+        if (res.length == 0) {
+          Session.set("newsEmpty", true);
+          Session.set('emptyText', sentences[Math.floor(5 * Math.random())]);
+        } else {
+          Session.set("newsEmpty", false);
+        }
+
         Session.set('showNewspaper', true);
         var fs = true;
         SelectedNews.remove({ });
@@ -132,6 +153,8 @@ Template.results.events({
             });
           }
         });
+
+        showArrow();
       }
     });
   }
