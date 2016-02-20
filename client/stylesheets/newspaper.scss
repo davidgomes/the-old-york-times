@@ -1,6 +1,8 @@
 #btn-news {
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
   display: block;
   background-color: white;
   color: #0275d8;
@@ -10,8 +12,13 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px black solid;
 
   #news-header {
+    margin-left: 2.5%;
+    width: 95%;
     margin-bottom: 15px;
 
     #news-title {
@@ -21,6 +28,7 @@
     }
 
     .news-box {
+      font-family: FenixRegular;
       margin-top: 25px;
       height: 110px;
       text-align: center;
@@ -53,6 +61,7 @@
     }
 
     .news-bar-left {
+      padding-left: 25px;
       text-align: left;
     }
 
@@ -61,6 +70,7 @@
     }
 
     .news-bar-right {
+      padding-right: 25px;
       text-align: right;
     }
   }
@@ -101,6 +111,9 @@
   }
 
   .news-article-breaking {
+    margin-left: 2.5%;
+    width: 95%;
+
     .card-title {
       font-size: 4em;
       text-align: center;

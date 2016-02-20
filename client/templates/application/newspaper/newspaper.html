@@ -1,59 +1,57 @@
 <template name="newspaper">
   <div id="newspaper">
-    <div id="newspaper">
-      <div id="news-header">
-        <div class="row">
-          <div class="col-md-2 news-box news-box-small">"All the News<br />That's Fit to Display"</div>
-          <div id="news-title" class="col-md-8">The Old York Times</div>
-          <div class="col-md-2 news-box news-box-big">Shift Edition</div>
-        </div>
+    <div id="news-header">
+      <div class="row">
+        <div class="col-md-2 news-box news-box-small">"All the News<br />That's Fit to Display"</div>
+        <div id="news-title" class="col-md-8">The Old York Times</div>
+        <div class="col-md-2 news-box news-box-big">Shift Edition</div>
       </div>
+    </div>
 
-      <div id="news-bar">
-        <hr />
-        <div class="row">
-          <div class="col-md-3 news-bar-left">&#169; TOYT</div>
-          <div class="col-md-6 news-bar-center">Europe, 13 <span class="small-font">of</span> January 2014 <span class="small-font">to</span> 23 <span class="small-font">of</span> February 2016</div>
-          <div class="col-md-3 news-bar-right">30.00 Shift Coins</div>
-        </div>
+    <div id="news-bar">
       <hr />
+      <div class="row">
+        <div class="col-md-3 news-bar-left">&#169; TOYT</div>
+        <div class="col-md-6 news-bar-center">Europe, 13 <span class="small-font">of</span> January 2014 <span class="small-font">to</span> 23 <span class="small-font">of</span> February 2016</div>
+        <div class="col-md-3 news-bar-right">30.00 Shift Coins</div>
       </div>
-
-      {{#if mainExists}}
-      <div class="card news-article news-article-breaking">
-        <div class="media">
-          {{#if mainImg}}
-          <a class="media-left" href="#">
-            <img src="http://tse3.mm.bing.net/th?id=OIP.Mf20bbdb74f1282b4df2a9c1f17293ebeo0&w=173&h=138&c=7&rs=1&qlt=90&o=4&pid=1.1">
-          </a>
-          {{/if}}
-          <div class="media-body">
-            <h4 class="card-title">{{mainHeadline}}</h4>
-            <p class="card-text">{{mainText}}</p>
-          </div>
-          <p class="card-text"><small class="text-muted">By <a href="{{source}}" target="_blank">{{mainSourceText}}</a> on the {{mainDate}}</small></p>
-        </div>
-        <hr />
-      </div>
-      {{/if}}
-
-      <div class="container-fluid">
-        <div class="card-columns">
-          {{#each news}}
-          {{> newsArticle}}
-          {{/each}}
-        </div>
-      </div>
-
       <hr />
+    </div>
 
-      <div id="footer-bar"></div>
-
-      <div id="footer-zone">
-        <div class="row">
-          <div class="col-md-4 barcode">01482032</div>
-          <div class="col-md-8 footer-text">ShiftAppens 2016 - TOYT - Hackathon101</div>
+    {{#if mainExists}}
+    <div class="card news-article news-article-breaking">
+      <div class="media">
+        {{#if mainImg}}
+        <a class="media-left" href="#">
+          <img src="http://tse3.mm.bing.net/th?id=OIP.Mf20bbdb74f1282b4df2a9c1f17293ebeo0&w=173&h=138&c=7&rs=1&qlt=90&o=4&pid=1.1">
+        </a>
+        {{/if}}
+        <div class="media-body">
+          <h4 class="card-title">{{mainHeadline}}</h4>
+          <p class="card-text">{{mainText}}</p>
         </div>
+        <p class="card-text pull-md-right"><small class="text-muted">By <a href="{{source}}" target="_blank">{{mainSourceText}}</a> on the {{mainDate}}</small></p>
+      </div>
+      <hr />
+    </div>
+    {{/if}}
+
+    <div class="container-fluid">
+      <div class="card-columns">
+        {{#each news}}
+        {{> newsArticle}}
+        {{/each}}
+      </div>
+    </div>
+
+    <hr />
+
+    <div id="footer-bar"></div>
+
+    <div id="footer-zone">
+      <div class="row">
+        <div class="col-md-4 barcode">01482032</div>
+        <div class="col-md-8 footer-text">ShiftAppens 2016 - TOYT - Hackathon101</div>
       </div>
     </div>
   </div>
