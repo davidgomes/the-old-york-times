@@ -31,10 +31,18 @@ const categoryShort = function (category) {
 
 Template.newspaper.events({
   'click #btn-news': function() {
+    var regionName;
+
+    if (currentRegion === "World") {
+      regionName = "World";
+    } else {
+      regionName = regions[currentRegion].name;
+    }
+
     Meteor.call('News.methods.getNews', {
-      startYear: new Date("2000-01-01"),
-      endYear: new Date("2004-01-01"),
-      region: "Europe"
+      startYear: new Date(dateSearchValues[0]),
+      endYear: new Date(dateSearchValues[1]),
+      region: regionName
     }, (err, res) => {
       if (err) {
         alert(err);

@@ -1,11 +1,9 @@
 // Create a list of day and monthnames.
-var
-weekdays = [
+var weekdays = [
   "Sunday", "Monday", "Tuesday",
   "Wednesday", "Thursday", "Friday",
   "Saturday"
-],
-months = [
+], months = [
   "January", "February", "March",
   "April", "May", "June", "July",
   "August", "September", "October",
@@ -36,6 +34,8 @@ function timestamp (str) {
   return new Date(str).getTime();
 }
 
+dateSearchValues = [];
+
 Template.slider.rendered = function () {
   var slider = document.getElementById('slider');
 
@@ -55,7 +55,7 @@ Template.slider.rendered = function () {
 
     pips: {
       mode: 'values',
-      values: [timestamp('1900'), timestamp('2016')],
+      values: [timestamp('1500'), timestamp('1900'), timestamp('2016'), (new Date ()).getTime()],
       density: 4
     }
   });
@@ -65,10 +65,13 @@ Template.slider.rendered = function () {
     document.getElementById('range-end')
   ];
 
-  slider.noUiSlider.on('update', function( values, handle ) {
+  slider.noUiSlider.on('update', function (values, handle) {
     dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
+    dateSearchValues[handle] = values[handle];
   });
 
-  $('.noUi-value').first().text('1900');
-  $('.noUi-value').last().text('2016');
+  $('.noUi-value').eq(0).text('1500');
+  $('.noUi-value').eq(1).text('1900');
+  $('.noUi-value').eq(2).text('2016');
+  $('.noUi-value').eq(3).text('Today');
 };

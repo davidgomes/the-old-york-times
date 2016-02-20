@@ -10,6 +10,23 @@ var resetColors = function () {
   });
 };
 
+var leaveWorldState = function () {
+  state = "world";
+  currentRegion = "World";
+
+  $('#map-container').css('margin-top', '0');
+
+  $.each(regions, function (regionName, regionObject) {
+    $.each(regionObject.countries, function (index, element) {
+      $('.datamaps-subunit.' + element).show().attr('transform', 'scale(1)');
+      $('.datamaps-subunit.' + element).css({ 'opacity': '1' });
+    });
+  });
+}
+
+var state = "world";
+currentRegion = "World";
+
 Template.worldMap.rendered = function () {
   $.each(Datamaps.prototype.worldTopo.objects.world.geometries, function (index, element) {
     if (element.properties.name === 'Kosovo') element.id = 'Kosovo';
@@ -31,13 +48,15 @@ Template.worldMap.rendered = function () {
           return '<div class="hoverinfo"><strong>' + countryID + '</strong></div>';
         }
 
-        $.each(regions[countryRegion].countries, function (index, element) {
-          $('.datamaps-subunit.' + element).css({
-            'fill': regions[countryRegion].hoverColor,
-            'stroke': regions[countryRegion].hoverColor,
-            'stroke-width': 1
+        if (state === "world") {
+          $.each(regions[countryRegion].countries, function (index, element) {
+            $('.datamaps-subunit.' + element).css({
+              'fill': regions[countryRegion].hoverColor,
+              'stroke': regions[countryRegion].hoverColor,
+              'stroke-width': 1
+            });
           });
-        });
+        }
 
         $.each(regions, function (regionName, regionObject) {
           if (regionName !== countryRegion) {
@@ -56,33 +75,62 @@ Template.worldMap.rendered = function () {
 
   $('.datamaps-subunit').mouseleave(resetColors);
 
-  $('.datamaps-subunit').mousedown(function (evt) {
+  $('#map-container').click(function (evt) {
+    leaveWorldState();
+  });
+
+  $('.datamaps-subunit').click(function (evt) {
     var countryRegion = getCountryRegion(evt.currentTarget.classList[1]);
 
-    $.each(regions, function (regionName, regionObject) {
-      if (regionName !== countryRegion) {
-        $.each(regionObject.countries, function (index, element) {
-          d3.select('.datamaps-subunit.' + element).remove();
+    if (state === "world") {
+      var countryRegionObject = regions[countryRegion];
+      currentRegion = countryRegion;
 
-          var zoom = d3.behavior.zoom();
-          d3.select('.datamaps-subunit.' + element).call(zoom);
-          zoom.scale(3);
-        });
-      } else {
-        $.each(regionObject.countries, function (index, element) {
-          console.log(element);
-
-          d3.select('.datamaps-subunit.' + element).attr('transform', 'scale(2) translate(-500, -50)');
-        });
+      if (countryRegionObject.addTopMargin) {
+        $('#map-container').css('margin-top', '70px');
       }
-    });
+
+      $.each(regions, function (regionName, regionObject) {
+        if (regionName !== countryRegion) {
+          $.each(regionObject.countries, function (index, element) {
+            //d3.select('.datamaps-subunit.' + element).hide();
+            $('.datamaps-subunit.' + element).css({ 'opacity': '0.3' });
+
+            var zoom = d3.behavior.zoom();
+            d3.select('.datamaps-subunit.' + element).call(zoom);
+            zoom.scale(3);
+
+            d3.select('.datamaps-subunit.' + element).attr('transform', `scale(2) translate(${countryRegionObject.translate.x * $('#map-container').width()}, ${countryRegionObject.translate.y * $('#map-container').innerHeight()})`);
+          });
+        } else {
+          $.each(regionObject.countries, function (index, element) {
+            d3.select('.datamaps-subunit.' + element).attr('transform', `scale(2) translate(${regionObject.translate.x * $('#map-container').width()}, ${regionObject.translate.y * $('#map-container').innerHeight()})`);
+          });
+        }
+      });
+
+      state = "region";
+    } else {
+      if (countryRegion !== currentRegion) {
+        leaveWorldState();
+      } else { // pick actual country
+        console.log('Selected country called ' + evt.currentTarget.classList[1]);
+      }
+    }
+
+    evt.stopPropagation();
   });
 
   $(window).keydown(function (evt) {
-
+    if (evt.keyCode === 27) {
+      leaveWorldState();
+    }
   });
 
   resetColors();
+
+  d3.select('.datamaps-subunit.GRL').remove();
+  d3.select('.datamaps-subunit.ATF').remove();
 
   $(window).on('resize', function () {
     map.resize();
