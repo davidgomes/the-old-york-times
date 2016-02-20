@@ -1,5 +1,5 @@
 <template name="newspaper">
-  <div id="newspaper">
+  <div id="newspaper" class="newspaper-{{epoch}}">
     <div id="news-header">
       <div class="row">
         <div class="col-md-2 news-box news-box-small">"All the News<br />That's Fit to Display"</div>
@@ -11,9 +11,9 @@
     <div id="news-bar">
       <hr />
       <div class="row">
-        <div class="col-md-3 news-bar-left">&#169; TOYT</div>
-        <div class="col-md-6 news-bar-center">Europe, 13 <span class="small-font">of</span> January 2014 <span class="small-font">to</span> 23 <span class="small-font">of</span> February 2016</div>
-        <div class="col-md-3 news-bar-right">30.00 Shift Coins</div>
+        <div class="col-md-3 news-bar-left">ISSUE 1, &#169; 2016 The Old York Times</div>
+        <div class="col-md-6 news-bar-center">{{location}}, {{fromDay}} <span class="small-font">of</span> {{fromDate}} <span class="small-font">to</span> {{toDay}} <span class="small-font">of</span> {{toDate}}</div>
+        <div class="col-md-3 news-bar-right">{{money}} Shift Coins</div>
       </div>
       <hr />
     </div>
@@ -30,7 +30,7 @@
           <h4 class="card-title">{{mainHeadline}}</h4>
           <p class="card-text">{{mainText}}</p>
         </div>
-        <p class="card-text pull-md-right"><small class="text-muted">By <a href="{{source}}" target="_blank">{{mainSourceText}}</a> on the {{mainDate}}</small></p>
+        <p class="card-text pull-md-right"><small class="text-muted">By <a href="{{source}}" target="_blank">{{mainSourceText}}</a> in {{mainRegion}} on the {{mainDate}}</small></p>
       </div>
       <hr />
     </div>
@@ -69,7 +69,7 @@
         <h4 class="card-title">{{headline}}</h4>
         <p class="card-text">{{text}}</p>
       </div>
-      <p class="card-text"><small class="text-muted">By <a href="{{source}}" target="_blank">{{sourceText}}</a> on the {{date}}</small></p>
+      <p class="card-text"><small class="text-muted">By <a href="{{source}}" target="_blank">{{sourceText}}</a> in {{region}} on the {{date}}</small></p>
     </div>
     <hr />
   </div>
