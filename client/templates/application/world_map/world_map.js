@@ -11,21 +11,37 @@ var resetColors = function () {
 };
 
 var leaveWorldState = function () {
+  var countryRegionObject = regions[currentRegion];
+
   state = "world";
   currentRegion = "World";
 
   $('#map-container').css('margin-top', '0');
 
-  $.each(regions, function (regionName, regionObject) {
+  /*$.each(regions, function (regionName, regionObject) {
     $.each(regionObject.countries, function (index, element) {
       $('.datamaps-subunit.' + element).show().attr('transform', 'scale(1)');
       $('.datamaps-subunit.' + element).css({ 'opacity': '1' });
     });
+  });*/
+
+  $.each(regions, function (regionName, regionObject) {
+    if (regionName !== currentRegion) {
+      $.each(regionObject.countries, function (index, element) {
+        $('.datamaps-subunit.' + element).animate({ transform: `scale(1) translate(${-countryRegionObject.translate.x * $('#map-container').width()}, ${-countryRegionObject.translate.y * $('#map-container').innerHeight()})`, opacity: 1}, 750);
+      });
+    } else {
+      $.each(regionObject.countries, function (index, element) {
+        $('.datamaps-subunit.' + element).animate({transform: `scale(1) translate(${-regionObject.translate.x * $('#map-container').width()}, ${-regionObject.translate.y * $('#map-container').innerHeight()})`}, 750);
+      });
+    }
   });
+
 }
 
 var state = "world";
 currentRegion = "World";
+var dx, dy;
 
 Template.worldMap.rendered = function () {
   $.each(Datamaps.prototype.worldTopo.objects.world.geometries, function (index, element) {
@@ -93,18 +109,11 @@ Template.worldMap.rendered = function () {
       $.each(regions, function (regionName, regionObject) {
         if (regionName !== countryRegion) {
           $.each(regionObject.countries, function (index, element) {
-            //d3.select('.datamaps-subunit.' + element).hide();
-            $('.datamaps-subunit.' + element).css({ 'opacity': '0.3' });
-
-            var zoom = d3.behavior.zoom();
-            d3.select('.datamaps-subunit.' + element).call(zoom);
-            zoom.scale(3);
-
-            d3.select('.datamaps-subunit.' + element).attr('transform', `scale(2) translate(${countryRegionObject.translate.x * $('#map-container').width()}, ${countryRegionObject.translate.y * $('#map-container').innerHeight()})`);
+            $('.datamaps-subunit.' + element).animate({ transform: `scale(2) translate(${countryRegionObject.translate.x * $('#map-container').width()}, ${countryRegionObject.translate.y * $('#map-container').innerHeight()})`, opacity: 0.3}, 750);
           });
         } else {
           $.each(regionObject.countries, function (index, element) {
-            d3.select('.datamaps-subunit.' + element).attr('transform', `scale(2) translate(${regionObject.translate.x * $('#map-container').width()}, ${regionObject.translate.y * $('#map-container').innerHeight()})`);
+            $('.datamaps-subunit.' + element).animate({transform: `scale(2) translate(${regionObject.translate.x * $('#map-container').width()}, ${regionObject.translate.y * $('#map-container').innerHeight()})`}, 750);
           });
         }
       });
