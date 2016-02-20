@@ -28,11 +28,11 @@ var leaveWorldState = function () {
   $.each(regions, function (regionName, regionObject) {
     if (regionName !== currentRegion) {
       $.each(regionObject.countries, function (index, element) {
-        $('.datamaps-subunit.' + element).animate({ transform: `scale(1) translate(${-countryRegionObject.translate.x * $('#map-container').width()}, ${-countryRegionObject.translate.y * $('#map-container').innerHeight()})`, opacity: 1}, 750);
+        $('.datamaps-subunit.' + element).animate({ transform: '', opacity: 1 }, 750);
       });
     } else {
       $.each(regionObject.countries, function (index, element) {
-        $('.datamaps-subunit.' + element).animate({transform: `scale(1) translate(${-regionObject.translate.x * $('#map-container').width()}, ${-regionObject.translate.y * $('#map-container').innerHeight()})`}, 750);
+        $('.datamaps-subunit.' + element).animate({ transform: '' }, 750);
       });
     }
   });
@@ -109,11 +109,11 @@ Template.worldMap.rendered = function () {
       $.each(regions, function (regionName, regionObject) {
         if (regionName !== countryRegion) {
           $.each(regionObject.countries, function (index, element) {
-            $('.datamaps-subunit.' + element).animate({ transform: `scale(2) translate(${countryRegionObject.translate.x * $('#map-container').width()}, ${countryRegionObject.translate.y * $('#map-container').innerHeight()})`, opacity: 0.3}, 750);
+            $('.datamaps-subunit.' + element).animate({ transform: `scale(2) translate(${countryRegionObject.translate.x * $('#map-container').width()}, ${countryRegionObject.translate.y * $('#map-container').innerHeight()})`, opacity: 0.3 }, 750);
           });
         } else {
           $.each(regionObject.countries, function (index, element) {
-            $('.datamaps-subunit.' + element).animate({transform: `scale(2) translate(${regionObject.translate.x * $('#map-container').width()}, ${regionObject.translate.y * $('#map-container').innerHeight()})`}, 750);
+            $('.datamaps-subunit.' + element).animate({ transform: `scale(2) translate(${regionObject.translate.x * $('#map-container').width()}, ${regionObject.translate.y * $('#map-container').innerHeight()})` }, 750);
           });
         }
       });
