@@ -130,6 +130,9 @@ Template.worldMap.rendered = function () {
 
   resetColors();
 
+  $('.datamaps-subunit.GRL').hide();
+  $('.datamaps-subunit.ATF').hide();
+
   $(window).on('resize', function () {
     map.resize();
   });
