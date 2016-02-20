@@ -13,6 +13,12 @@ var resetColors = function () {
 var leaveWorldState = function () {
   var countryRegionObject = regions[currentRegion];
 
+  if (currentCountryID !== null) {
+    $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].color);
+  }
+
+  currentCountryID = null;
+
   state = "world";
   currentRegion = "World";
   Session.set("WorldVar", "World");
@@ -84,7 +90,7 @@ Template.worldMap.rendered = function () {
         }
 
         if (state === "country") {
-          //$('.datamaps-subunit.' + currentCountry).css('fill', regions[getCountryRegion(currentCountry)].hoverColor);
+          $('.datamaps-subunit.' + countryID).css('fill', regions[countryRegion].hoverColor);
         }
 
         if (state === "world") {
@@ -135,18 +141,33 @@ Template.worldMap.rendered = function () {
       if (countryRegion !== currentRegion) {
         leaveWorldState();
       } else { // pick actual country
-        currentCountryID = evt.currentTarget.classList[1];
+        var countryID = evt.currentTarget.classList[1];
 
-        state = "country";
+        if (countryID === currentCountryID) {
+          $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].color);
+          currentCountryID = null;
+          Sesstion.set("WorldVar", currentRegion);
 
-        $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].hoverColor);
+          state = "region";
+        } else {
+          if (currentCountryID !== null) {
+            $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].color);
+          }
+
+          currentCountryID = countryID;
+          Session.set("WorldVar", getCountryNameFromID(currentCountryID));
+
+          state = "country";
+
+          $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].countryColor);
+        }
       }
     }
 
     evt.stopPropagation();
   });
 
-  $(window).keydown(function (evt) {
+  $('#map-container').keydown(function (evt) {
     if (evt.keyCode === 27) {
       leaveWorldState();
     }
@@ -154,8 +175,7 @@ Template.worldMap.rendered = function () {
 
   $('#map-container').mousemove(function () {
     if (currentCountryID !== null) {
-      console.log('uo');
-      $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].hoverColor);
+      $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].countryColor);
     }
   });
 

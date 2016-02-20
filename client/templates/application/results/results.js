@@ -69,8 +69,11 @@ Template.results.helpers({
   newsLocation: function () {
     if (Session.get("WorldVar") === "World") {
       return "the entire World";
-    } else {
-      return regions[Session.get("WorldVar")].name;
+    } else if (_.contains(["southAmerica", "northAmerica", "africa", "europe", "middleEast", "asia", "oceania"], Session.get("WorldVar"))) {
+      return "all of " + regions[Session.get("WorldVar")].name;
+    }
+    else {
+      return Session.get("WorldVar");
     }
   },
 
@@ -91,10 +94,15 @@ Template.results.events({
   'click #btn-news' : function () {
     var regionName;
 
-    if (currentRegion === "World") {
-      regionName = "World";
+    if (currentCountryID === null) {
+      if (currentRegion === "World") {
+        regionName = "World";
+      } else {
+        regionName = regions[currentRegion].name;
+      }
     } else {
-      regionName = regions[currentRegion].name;
+      regionName = getCountryNameFromID(currentCountryID);
+      console.log('heyyyy ' + currentCountryID + ' ' + regionName);
     }
 
     const fromDate = new Date(+dateSearchValues[0]);
