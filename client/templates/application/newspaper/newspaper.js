@@ -8,9 +8,11 @@ Template.newspaper.helpers({
 
 Template.newspaper.events({
   'click #btn-news': function() {
+    console.log(dateSearchValues[0], dateSearchValues[1]);
+
     Meteor.call('News.methods.getNews', {
-      startYear: new Date("1940-01-01"),
-      endYear: new Date("1945-01-01"),
+      startYear: new Date(+dateSearchValues[0]),
+      endYear: new Date(+dateSearchValues[1]),
       region: "Europe"
     }, (err, res) => {
       if (err) {

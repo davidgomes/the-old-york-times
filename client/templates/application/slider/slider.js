@@ -1,11 +1,9 @@
 // Create a list of day and monthnames.
-var
-weekdays = [
+var weekdays = [
   "Sunday", "Monday", "Tuesday",
   "Wednesday", "Thursday", "Friday",
   "Saturday"
-],
-months = [
+], months = [
   "January", "February", "March",
   "April", "May", "June", "July",
   "August", "September", "October",
@@ -35,6 +33,8 @@ function formatDate (date) {
 function timestamp (str) {
   return new Date(str).getTime();
 }
+
+dateSearchValues = [];
 
 Template.slider.rendered = function () {
   var slider = document.getElementById('slider');
@@ -67,28 +67,7 @@ Template.slider.rendered = function () {
 
   slider.noUiSlider.on('update', function (values, handle) {
     dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
-
-    console.log();
-
-    /*Meteor.call('News.methods.getNews', {
-      startYear: new Date("1940-01-01"),
-      endYear: new Date("1945-01-01"),
-      region: "Europe"
-    }, (err, res) => {
-      if (err) {
-        alert(err);
-      } else {
-        SelectedNews.remove({ });
-        console.log(res);
-        res.forEach((item) => {
-          console.log(item);
-          SelectedNews.insert({
-            headline: item.headline,
-            date: item.date
-          });
-        });
-      }
-    });*/
+    dateSearchValues[handle] = values[handle];
   });
 
   $('.noUi-value').eq(0).text('1500');
