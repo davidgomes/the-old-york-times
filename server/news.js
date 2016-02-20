@@ -19,9 +19,8 @@ Meteor.methods({
     } else {
       newsList = News.find({ date: { $gt: startYear, $lt: endYear }, country: region }, { sort: { sort_id: 1 }, limit: 160 }).fetch();
     }
-    newsList = _.shuffle(newsList);
 
-    console.log(_.sample(newsList, 10));
-    return _.sample(newsList, 10);
+    newsList = _.shuffle(newsList);
+    return _.sample(newsList, 18);
   }
 });

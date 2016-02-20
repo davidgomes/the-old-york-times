@@ -19,19 +19,28 @@
       <hr />
       </div>
 
+      {{#if mainExists}}
+      <div class="card news-article news-article-breaking">
+        <div class="media">
+          {{#if mainImg}}
+          <a class="media-left" href="#">
+            <img src="http://tse3.mm.bing.net/th?id=OIP.Mf20bbdb74f1282b4df2a9c1f17293ebeo0&w=173&h=138&c=7&rs=1&qlt=90&o=4&pid=1.1">
+          </a>
+          {{/if}}
+          <div class="media-body">
+            <h4 class="card-title">{{mainHeadline}}</h4>
+            <p class="card-text">{{mainText}}</p>
+          </div>
+          <p class="card-text"><small class="text-muted">By <a href="{{source}}" target="_blank">{{mainSourceText}}</a> on the {{mainDate}}</small></p>
+        </div>
+        <hr />
+      </div>
+      {{/if}}
+
       <div class="container-fluid">
         <div class="card-columns">
           {{#each news}}
-          <div class="card news-article">
-            <div class="card-block">
-              <div class="row"><div class="col-md-6 col-md-offset-3"><hr /></div></div>
-              <h4 class="card-title">{{categoryText}}</h4>
-              <div class="row"><div class="col-md-6 col-md-offset-3"><hr /></div></div>
-              <p class="card-text news-source">By <a href="{{source}}" target="_blank">{{sourceText}}</a></p>
-              <p class="card-text">{{headline}}</p>
-              <p class="card-text"><small class="text-muted">On the {{date}}</small></p>
-            </div>
-          </div>
+          {{> newsArticle}}
           {{/each}}
         </div>
       </div>
@@ -47,5 +56,23 @@
         </div>
       </div>
     </div>
+  </div>
+</template>
+
+<template name="newsArticle">
+  <div class="card news-article">
+    <div class="media">
+      {{#if img}}
+      <a class="media-left" href="#">
+        <img src="http://tse3.mm.bing.net/th?id=OIP.Mf20bbdb74f1282b4df2a9c1f17293ebeo0&w=173&h=138&c=7&rs=1&qlt=90&o=4&pid=1.1">
+      </a>
+      {{/if}}
+      <div class="media-body">
+        <h4 class="card-title">{{headline}}</h4>
+        <p class="card-text">{{text}}</p>
+      </div>
+      <p class="card-text"><small class="text-muted">By <a href="{{source}}" target="_blank">{{sourceText}}</a> on the {{date}}</small></p>
+    </div>
+    <hr />
   </div>
 </template>

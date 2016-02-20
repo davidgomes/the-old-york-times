@@ -41,6 +41,7 @@
   hr {
     padding: 0px;
     margin: 1px;
+    margin-top: 5px;
   }
 
   #news-bar {
@@ -65,10 +66,28 @@
   }
 
   .news-article {
+    border: none;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    p {
+      margin: 0px;
+    }
+
+    a {
+      color: #444;
+      text-decoration: none;
+
+      &:hover {
+        color: #111;
+      }
+    }
+
     .card-title {
       font-family: FenixRegular;
-      font-size: 2em;
-      text-align: center;
+      font-size: 1.4em;
+      text-align: left;
       padding: 0px;
       padding-bottom: 2px;
       margin: 0px;
@@ -77,7 +96,14 @@
     .news-source {
       margin-top: 3px;
       font-size: 0.8em;
-      text-align: right;
+      text-align: left;
+    }
+  }
+
+  .news-article-breaking {
+    .card-title {
+      font-size: 4em;
+      text-align: center;
     }
   }
 
