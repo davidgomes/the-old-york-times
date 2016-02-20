@@ -146,7 +146,7 @@ Template.worldMap.rendered = function () {
         if (countryID === currentCountryID) {
           $('.datamaps-subunit.' + currentCountryID).css('fill', regions[getCountryRegion(currentCountryID)].color);
           currentCountryID = null;
-          Sesstion.set("WorldVar", currentRegion);
+          Session.set("WorldVar", currentRegion);
 
           state = "region";
         } else {
