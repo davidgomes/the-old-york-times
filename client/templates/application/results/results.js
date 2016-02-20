@@ -105,6 +105,7 @@ Template.results.events({
         Session.set('showNewspaper', true);
         var fs = true;
         SelectedNews.remove({ });
+        Session.set("mainNews", { });
         res.forEach((item) => {
           if (fs) {
             Session.set("mainNews", {

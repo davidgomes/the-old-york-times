@@ -30,8 +30,7 @@ var leaveWorldState = function () {
       });
     }
   });
-
-}
+};
 
 var state = "world";
 currentCountryID = null;

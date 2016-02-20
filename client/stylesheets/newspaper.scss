@@ -1,11 +1,13 @@
 .newspaper-medieval {
+
 }
 
 .newspaper-classic {
-  background-color: #F6DAC8;
+  background-image: url('/img/old_paper2.png');
+  background-repeat: repeat;
 
   .card {
-    background-color: #F6DAC8;
+    background: none;
   }
 }
 
