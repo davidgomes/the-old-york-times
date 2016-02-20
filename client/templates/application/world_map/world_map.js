@@ -104,8 +104,6 @@ Template.worldMap.rendered = function () {
           });
         } else {
           $.each(regionObject.countries, function (index, element) {
-            console.log($('#map-container').height());
-
             d3.select('.datamaps-subunit.' + element).attr('transform', `scale(2) translate(${regionObject.translate.x * $('#map-container').width()}, ${regionObject.translate.y * $('#map-container').innerHeight()})`);
           });
         }
