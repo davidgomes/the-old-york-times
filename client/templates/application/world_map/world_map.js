@@ -65,7 +65,9 @@ Template.worldMap.rendered = function () {
       var countryRegion = getCountryRegion(evt.currentTarget.classList[1]);
       var countryRegionObject = regions[countryRegion];
 
-      //$('#map-container').css('margin-top', '70px');
+      if (countryRegionObject.addTopMargin) {
+        $('#map-container').css('margin-top', '70px');
+      }
 
       $.each(regions, function (regionName, regionObject) {
         if (regionName !== countryRegion) {
@@ -90,12 +92,15 @@ Template.worldMap.rendered = function () {
 
       state = "region";
     } else {
+      // TODO check if is inside current region, if not do the ESC thing
     }
   });
 
   $(window).keydown(function (evt) {
     if (evt.keyCode === 27) {
       state = "world";
+
+      $('#map-container').css('margin-top', '0');
 
       $.each(regions, function (regionName, regionObject) {
         $.each(regionObject.countries, function (index, element) {
