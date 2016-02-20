@@ -1,73 +1,10 @@
-const SelectedNews = new Mongo.Collection(null);
-
 Template.newspaper.helpers({
   news: function () {
     return SelectedNews.find({ }, { sort: { date: 1 } }).fetch();
   }
 });
 
-const monthList = ["January", "February", "March", "April", "May", "June",
-                   "July", "August", "September", "October", "November", "December"];
-const printDate = function (date) {
-  const dateStr = date.getDate().toString() + " of " +
-          monthList[date.getMonth().toString()] + ", " +
-          date.getFullYear().toString();
-
-  return dateStr;
+Template.newspaper.rendered = function () {
+  //Session.set('showNewspaper', true);
+  $('html, body').animate({scrollTop: $('#newspaper').offset().top + 3 }, 2000);
 };
-
-const categoryShort = function (category) {
-  switch (category) {
-  case "Arts and Entertainment":
-    return "arts";
-  case "Sports":
-    return "sports";
-  case "Technology and Science":
-    return "tech";
-  default:
-    return "world";
-  }
-};
-
-const sourceText = function (source) {
-  switch (source) {
-  case "https://en.wikipedia.org":
-    return "Wikipedia";
-  default:
-    return "OnThisDay";
-  }
-};
-
-Template.newspaper.events({
-  'click #btn-news': function() {
-    var regionName;
-
-    if (currentRegion === "World") {
-      regionName = "World";
-    } else {
-      regionName = regions[currentRegion].name;
-    }
-
-    Meteor.call('News.methods.getNews', {
-      startYear: new Date(+dateSearchValues[0]),
-      endYear: new Date(+dateSearchValues[1]),
-      region: regionName
-    }, (err, res) => {
-      if (err) {
-        alert(err);
-      } else {
-        SelectedNews.remove({ });
-        res.forEach((item) => {
-          SelectedNews.insert({
-            headline: item.headline,
-            date: printDate(item.date),
-            category: categoryShort(item.category),
-            categoryText: item.category,
-            source: item.source,
-            sourceText: sourceText(item.source)
-          });
-        });
-      }
-    });
-  }
-});

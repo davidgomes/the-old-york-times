@@ -3,6 +3,10 @@
     {{> slider}}
     {{> worldMap}}
 
-    {{> newspaper}}
+    <button type="button" id="btn-news" class="btn btn-primary">Get News</button>
+
+    {{#if showNewspaper}}
+      {{> newspaper}}
+    {{/if}}
   </div>
 </template>
