@@ -6,20 +6,22 @@ Meteor.methods({
       region: { type: String }
     }).validate({ startYear, endYear, region });
 
-    const regionArray = ["North America", "South America", "Europe", "East Asia", "West Asia", "Africa", "Oceania", "World"];
+    const regionArray = ["North America", "South America", "Europe", "East Asia", "West Asia", "Africa", "Oceania"];
     let newsList = [];
 
     console.log("Searching for " + startYear.toString() + " " + endYear.toString());
 
-    if (_.contains(regionArray, region)) {
+    if (region == "World") {
+      newsList = News.find({ date: { $gt: startYear, $lt: endYear } }, { sort: { sort_id: 1 }, limit: 160 }).fetch();
+    } else if (_.contains(regionArray, region)) {
       console.log("Searching for " + region);
       newsList = News.find({ date: { $gt: startYear, $lt: endYear }, region: region }, { sort: { sort_id: 1 }, limit: 160 }).fetch();
     } else {
       newsList = News.find({ date: { $gt: startYear, $lt: endYear }, country: region }, { sort: { sort_id: 1 }, limit: 160 }).fetch();
     }
-
     newsList = _.shuffle(newsList);
 
+    console.log(_.sample(newsList, 10));
     return _.sample(newsList, 10);
   }
 });

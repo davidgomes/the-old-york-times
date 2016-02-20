@@ -40,8 +40,8 @@ Template.newspaper.events({
     }
 
     Meteor.call('News.methods.getNews', {
-      startYear: new Date(dateSearchValues[0]),
-      endYear: new Date(dateSearchValues[1]),
+      startYear: new Date(+dateSearchValues[0]),
+      endYear: new Date(+dateSearchValues[1]),
       region: regionName
     }, (err, res) => {
       if (err) {
