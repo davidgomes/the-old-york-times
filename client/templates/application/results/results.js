@@ -84,7 +84,7 @@ Template.results.events({
         regionName = regions[currentRegion].name;
       }
     } else {
-      regionName = getCountryNameFromID();
+      regionName = getCountryNameFromID(currentCountryID);
     }
 
     const fromDate = new Date(+dateSearchValues[0]);
