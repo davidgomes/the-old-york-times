@@ -18,13 +18,6 @@ var leaveWorldState = function () {
 
   $('#map-container').css('margin-top', '0');
 
-  /*$.each(regions, function (regionName, regionObject) {
-    $.each(regionObject.countries, function (index, element) {
-      $('.datamaps-subunit.' + element).show().attr('transform', 'scale(1)');
-      $('.datamaps-subunit.' + element).css({ 'opacity': '1' });
-    });
-  });*/
-
   $.each(regions, function (regionName, regionObject) {
     if (regionName !== currentRegion) {
       $.each(regionObject.countries, function (index, element) {
