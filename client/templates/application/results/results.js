@@ -77,7 +77,7 @@ Template.results.events({
   'click #btn-news': function() {
     var regionName;
 
-    if (currentCountryID !== null) {
+    if (currentCountryID === null) {
       if (currentRegion === "World") {
         regionName = "World";
       } else {
