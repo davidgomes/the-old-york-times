@@ -86,11 +86,17 @@ Template.worldMap.rendered = function () {
         }
 
         if (state === "region") {
-          $('.datamaps-subunit.' + countryID).css('fill', regions[countryRegion].hoverColor);
+          $('.datamaps-subunit.' + countryID).css({
+            'fill': regions[countryRegion].hoverColor,
+            'stroke-width': 0
+          });
         }
 
         if (state === "country") {
-          $('.datamaps-subunit.' + countryID).css('fill', regions[countryRegion].hoverColor);
+          $('.datamaps-subunit.' + countryID).css({
+            'fill': regions[countryRegion].hoverColor,
+            'stroke-width': 0
+          });
         }
 
         if (state === "world") {
