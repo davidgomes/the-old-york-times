@@ -51,7 +51,7 @@ setupDatabase = function (){
     });
   }
 
-  const load2 = false, load2new = false;
+  const load2 = true, load2new = false;
   if (load2) {
     if (load2new) {
       StarredImages.remove({ });
