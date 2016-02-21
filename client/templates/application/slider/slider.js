@@ -49,7 +49,7 @@ Template.slider.rendered = function () {
       'max': [ (new Date ()).getTime() ]
     },
 
-    start: [ timestamp('2011'), timestamp('2015') ],
+    start: [ timestamp('1960'), timestamp('1980') ],
 
     connect: true,
 
