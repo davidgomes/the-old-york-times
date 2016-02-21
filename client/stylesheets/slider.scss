@@ -3,7 +3,6 @@ $slider-width: 82%;
 #slider-container {
   width: 100%;
   z-index: 10200;
-  //background: linear-gradient(rgba(255,255, 255,1), rgba(255,255, 255,0));
   background-color: white;
   height: 125px;
   margin-top: 20px;
@@ -22,5 +21,9 @@ $slider-width: 82%;
     margin-right: auto;
 
     margin-top: 10px;
+
+    .noUi-connect {
+      background: #0275d8;
+    }
   }
 }
