@@ -96,7 +96,7 @@ Template.newspaper.rendered = function () {
 
 Template.newsArticle.helpers({
   img: function () {
-    return this.img;
+    return !!this.imageSrc;
   }
 });
 

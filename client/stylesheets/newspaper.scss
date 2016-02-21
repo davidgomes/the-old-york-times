@@ -25,6 +25,13 @@
   #footer-zone {
     display: none;
   }
+
+  .news-article {
+    img {
+      -webkit-filter: sepia(1);
+      filter: sepia(1);
+    }
+  }
 }
 
 .newspaper-classic {
@@ -33,6 +40,13 @@
 
   .card {
     background: none;
+  }
+
+  .news-article {
+    img {
+      -webkit-filter: grayscale(0.3);
+      filter: grayscale(0.3);
+    }
   }
 }
 

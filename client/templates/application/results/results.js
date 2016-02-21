@@ -142,7 +142,7 @@ Template.results.events({
         res.forEach((item) => {
           if (fs) {
             Session.set("mainNews", {
-              img: !!Math.round(Math.random()),
+              imageSrc: item.image_link,
               region: item.country,
               headline: item.headline,
               date: printDate(item.date),
@@ -154,7 +154,7 @@ Template.results.events({
             fs = false;
           } else {
             SelectedNews.insert({
-              img: !!Math.round(Math.random()),
+              imageSrc: item.image_link,
               region: item.country,
               headline: item.headline,
               date: printDate(item.date),
@@ -166,6 +166,7 @@ Template.results.events({
           }
         });
 
+        console.log(SelectedNews.find({}).fetch());
         showArrow();
       }
     });
