@@ -67,6 +67,7 @@
   padding: 10px;
   border: 1px #E5E5E5 solid;
   opacity: 0;
+  margin-top: 150px;
 
   #news-header {
     margin-left: 2.5%;
@@ -230,8 +231,25 @@
 
 #back-arrow {
  /* z-index: 101;*/
-  font-size: 4em;
   position: fixed;
   right: 4%;
-  top: 15%;
+  top: 20%;
+
+  i {
+    font-size: 4em;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  a {
+    color: #BABABA;
+
+    &:hover {
+      text-decoration: none;
+      color: #767777;
+    }
+  }
 }

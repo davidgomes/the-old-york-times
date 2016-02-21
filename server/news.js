@@ -59,6 +59,31 @@ Meteor.methods({
     }
 
     newsList = _.shuffle(newsList);
-    return _.sample(newsList, 18);
+    newsList = _.sample(newsList, 18);
+
+    newsList.forEach((item) => {
+      const img = BannedImages.findOne({ headline: item.headline });
+
+      if (img) {
+        item.image_link = "";
+      }
+    });
+
+    return newsList;
+  },
+  'News.methods.banImage'({ headline }) {
+    new SimpleSchema({
+      headline: { type: String }
+    }).validate({ headline });
+
+    const img = BannedImages.findOne({ headline: headline });
+
+    if (img) {
+      return;
+    }
+
+    BannedImages.insert({
+      headline: headline
+    });
   }
 });

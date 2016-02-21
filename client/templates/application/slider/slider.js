@@ -76,6 +76,14 @@ Template.slider.rendered = function () {
     } else if (handle == 1) {
       Session.set("DateEnd", values[1]);
     }
+
+    setSpinner();
+  });
+
+  slider.noUiSlider.on('end', function(){
+    if (Session.get("showNewspaper")) {
+      loadNewpaper();
+    }
   });
 
   $('.noUi-value').eq(0).text('1500');

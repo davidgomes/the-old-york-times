@@ -2,7 +2,7 @@ setupDatabase = function (){
   News._ensureIndex({ "date": 1 });
 
   if (News.find().count() == 0){
-    var data = Assets.getText('final-database.json');
+    const data = Assets.getText('final-database.json');
     docs = JSON.parse(data);
     for (var i = 0; i < docs.length; i++) {
       const dc = docs[i];
@@ -24,6 +24,33 @@ setupDatabase = function (){
         console.log(i);
       }
     }
+  }
+
+  const imgData = Assets.getText('img-banned.json');
+  const imgDocs = JSON.parse(imgData);
+  for (var i = 0; i < imgDocs.length; i++) {
+    const dc = imgDocs[i];
+
+    const img = BannedImages.findOne({ headline: dc.headline });
+
+    if (img) {
+      continue;
+    }
+
+    BannedImages.insert({
+      headline: dc.headline
+    });
+  }
+
+  const dump = false;
+  if (dump) {
+    console.log('Dumping...');
+    const imgObject = JSON.stringify(BannedImages.find({ }, { fields : { _id : 0 } }).fetch());
+    var path = process.env["PWD"] + "/private/";
+    fs.writeFile(path + 'dump.json', imgObject, function (err) {
+      if (err) throw err;
+      console.log('Dump done.');
+    });
   }
 
   console.log('Database ready.');

@@ -91,6 +91,9 @@ Template.newspaper.events({
     $('html, body').animate({scrollTop: 0 }, 1000);
     hideArrow();
     $('#map-container').fadeIn('slow');
+    $('#btn-news').fadeIn('slow');
+    $('#search-description').fadeIn('slow');
+    $('#slider-container').css('position', 'static');
     Session.set('showNewspaper', false);
   },
   'click #btnShare': function(){
@@ -119,6 +122,17 @@ Template.newspaper.rendered = function () {
 Template.newsArticle.helpers({
   img: function () {
     return !!this.imageSrc;
+  }
+});
+
+Template.newsArticle.events({
+  'click .ban-image': function (event) {
+    event.preventDefault();
+
+    SelectedNews.update({ _id: this._id }, { $set: { imageSrc: false} });
+    Meteor.call('News.methods.banImage', {
+      headline: this.headline
+    });
   }
 });
 
