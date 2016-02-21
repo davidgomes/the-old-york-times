@@ -12,11 +12,36 @@
   }
 
   p {
-    width: 60%;
     font-family: 'EB Garamond', serif;
+    font-size: 1.1em;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     font-family: 2em;
+  }
+
+  .last-paragraph {
+    margin-top: 50px;
+  }
+
+  .row {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.1em;
+
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    div {
+      padding: 0;
+
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+    }
   }
 
   #begin-btn {

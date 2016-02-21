@@ -2,13 +2,41 @@
   <div id="front">
     <h1>The Old York Times</h1>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet eu turpis at lobortis. In aliquam nisi sed nunc suscipit vehicula. Donec vestibulum mollis leo at egestas. Praesent sed quam ac metus consectetur molestie in sed urna. Donec ut eleifend nulla. Maecenas sed nunc at est lacinia vestibulum. Etiam nec tristique turpis.</p>
+    <p>
+      "The Old York Times" is a simple application that allows you to browse the most
+      relevant news for any given time range (from 1500 to 2016) and for any region. This
+      region can be the entire world, a single continent or even a specific country.
+    </p>
 
-    <p>Integer luctus, tortor vitae laoreet sagittis, nibh purus elementum mi, ultrices porta nisl velit at lorem. Pellentesque feugiat, turpis id scelerisque semper, purus nisi pulvinar lorem, vestibulum porttitor magna leo ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum non ultricies sapien. Praesent gravida elit non elit bibendum sagittis. Maecenas laoreet pretium venenatis. Proin eget eleifend sapien, at posuere risus. Aliquam cursus ac risus vel auctor. Cras scelerisque lacus et suscipit imperdiet. Cras ligula dui, iaculis id congue id, dictum non elit. Aenean condimentum volutpat felis vel molestie.</p>
 
-    <p>In mi purus, interdum nec laoreet vitae, semper non tellus. Vestibulum dapibus venenatis eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac mi volutpat, condimentum sem ac, sollicitudin augue. Curabitur ac lacinia leo. Fusce non tincidunt leo. Donec turpis dolor, porta ut lorem porta, dapibus ultrices nunc. Aliquam pretium faucibus odio, in venenatis orci ornare eu. Nam euismod non massa at blandit. Curabitur gravida tellus nisl, vitae condimentum mauris tincidunt ac. Duis vestibulum nunc et erat pharetra imperdiet. Duis lacus turpis, egestas scelerisque ultricies ut, aliquam vel tortor. Nunc dignissim rhoncus mauris in dictum.</p>
+    <div class="row">
+      <div class="col-md-3">
+        The application works by selecting the time range first, in the slider. This interval
+        is the one that will be used for the search.
+      </div>
 
-    <p>Etiam laoreet tincidunt diam vel lacinia. Morbi lacus ipsum, ornare eget interdum vel, dapibus eu mi. Donec ultricies eget turpis et ornare. Maecenas accumsan enim non molestie dapibus. Suspendisse venenatis sagittis orci at pretium. Pellentesque ut nibh non nisl tristique dictum ut eu erat. Ut consectetur ligula a neque auctor, a iaculis sapien euismod. Suspendisse sagittis, lorem ut dapibus hendrerit, sapien ipsum dictum lorem, sed hendrerit magna ipsum ac diam. Integer a turpis vel dolor accumsan tincidunt. Aliquam erat volutpat.</p>
+      <div class="col-md-9">
+        <img class="img-responsive" src="/img/slidergif.gif"/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9">
+        <img style="width: 90%;" class="img-responsive" src="/img/mapgif.gif"/>
+      </div>
+
+      <div class="col-md-3">
+        The second step is to select the region for the search. Leave the map as it is if
+        you want to search for news in the entire world, or select a continent if you want to
+        search news for that continent. After selecting a continent, you can select a single
+        country if you want to search for a specific country.
+      </div>
+    </div>
+
+    <p class="last-paragraph">
+      After these two very simple steps, all that you have to do is hit the "Get News"
+      button which will generate a cute edition of "The Old York Times" for you to read.
+    </p>
 
     <button class="btn btn-primary" id="begin-btn">Begin</button>
   </div>
