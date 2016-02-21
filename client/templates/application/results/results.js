@@ -117,7 +117,7 @@ Template.results.events({
       fromDay: parseOrdinal(fromDate.getDate().toString()),
       fromDate: (monthList[fromDate.getMonth().toString()] + " " + fromDate.getFullYear().toString()),
       toDay: parseOrdinal(toDate.getDate().toString()),
-      toDate: (monthList[toDate.getMonth().toString()] + " " + toDate.getFullYear().toString())
+      toDate: (monthList[toDate.getMonth().toString()] + " " + toDate.getFullYear().toString()),
     });
 
     $('#map-container').fadeOut('slow');
@@ -144,6 +144,7 @@ Template.results.events({
         res.forEach((item) => {
           if (fs) {
             Session.set("mainNews", {
+              text: item.text,
               imageSrc: item.image_link,
               region: item.country,
               headline: item.headline,
@@ -156,6 +157,7 @@ Template.results.events({
             fs = false;
           } else {
             SelectedNews.insert({
+              text: item.text,
               imageSrc: item.image_link,
               region: item.country,
               headline: item.headline,
