@@ -82,7 +82,8 @@ Template.slider.rendered = function () {
 
   slider.noUiSlider.on('end', function(){
     if (Session.get("showNewspaper")) {
-      loadNewpaper();
+      loadNewspaper();
+      fillNewspaper();
     }
   });
 
