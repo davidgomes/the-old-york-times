@@ -126,6 +126,8 @@ Template.results.events({
 
     $('#map-container').fadeOut('slow');
 
+    $('#slider-container').css('position', 'fixed');
+
     Meteor.call('News.methods.getNews', {
       startYear: new Date(+dateSearchValues[0]),
       endYear: new Date(+dateSearchValues[1]),
