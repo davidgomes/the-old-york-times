@@ -89,6 +89,8 @@ Template.newspaper.events({
   'click #black-arrow-link': function () {
     $('html, body').animate({scrollTop: 0 }, 1000);
     hideArrow();
+    $('#map-container').fadeIn('slow');
+    Session.set('showNewspaper', false);
   }
 });
 

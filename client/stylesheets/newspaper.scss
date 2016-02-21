@@ -228,8 +228,9 @@
 }
 
 #back-arrow {
+ /* z-index: 101;*/
   font-size: 4em;
   position: fixed;
-  top: 2%;
-  right: 2%;
+  right: 4%;
+  top: 15%;
 }
