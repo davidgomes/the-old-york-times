@@ -120,6 +120,8 @@ Template.results.events({
       toDate: (monthList[toDate.getMonth().toString()] + " " + toDate.getFullYear().toString())
     });
 
+    $('#map-container').fadeOut('slow');
+
     Meteor.call('News.methods.getNews', {
       startYear: new Date(+dateSearchValues[0]),
       endYear: new Date(+dateSearchValues[1]),
