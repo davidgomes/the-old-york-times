@@ -106,6 +106,18 @@ Template.newspaper.events({
     $('#search-description').fadeIn('slow');
     $('#slider-container').css('position', 'static');
     Session.set('showNewspaper', false);
+  },
+  'click #btnShare': function(){
+    data = [];
+    console.log(SelectedNews.find().count());
+    SelectedNews.find().forEach(function(el){
+      data.push(el.headline);
+    });
+    console.log(data);
+    Meteor.call('storeSearch', [data, Session.get('mainNews'), Session.get('newsObject')], function(e, id){
+      console.log('id', id);
+      console.log("/search/" + id);
+    });
   }
 });
 

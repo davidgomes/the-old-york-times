@@ -12,7 +12,7 @@ const sentences = ["The annals of history know nothing about this",
                   "Well, nice try, but this was a slow time"];
 const sides = ["left", "right"];
 
-const printDate = function (date) {
+printDate = function (date) {
   const dateStr = date.getDate().toString() + " of " +
           monthList[date.getMonth().toString()] + ", " +
           date.getFullYear().toString();
@@ -20,7 +20,7 @@ const printDate = function (date) {
   return dateStr;
 };
 
-const categoryShort = function (category) {
+categoryShort = function (category) {
   switch (category) {
   case "Arts and Entertainment":
     return "arts";
@@ -33,7 +33,7 @@ const categoryShort = function (category) {
   }
 };
 
-const sourceText = function (source) {
+sourceText = function (source) {
   switch (source) {
   case "https://en.wikipedia.org":
     return "Wikipedia";
