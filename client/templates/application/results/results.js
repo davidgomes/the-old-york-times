@@ -65,6 +65,17 @@ const showArrow = function () {
   $("#back-arrow").show();
 };
 
+setSpinner = function () {
+  if (Session.get("isSpinning")) {
+    return;
+  }
+
+  Session.set("isSpinning", true);
+  Meteor.setTimeout(() => {
+    Session.set("isSpinning", false);
+  }, 1000);
+};
+
 loadNewpaper = function () {
   var regionName;
 
@@ -151,6 +162,9 @@ loadNewpaper = function () {
 };
 
 Template.results.helpers({
+  spinning: function () {
+    return Session.get("isSpinning");
+  },
   showResults: function () {
     return Session.get('showResults');
   },

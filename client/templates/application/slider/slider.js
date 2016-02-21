@@ -76,6 +76,8 @@ Template.slider.rendered = function () {
     } else if (handle == 1) {
       Session.set("DateEnd", values[1]);
     }
+
+    setSpinner();
   });
 
   slider.noUiSlider.on('end', function(){
