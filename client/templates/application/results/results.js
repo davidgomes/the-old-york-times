@@ -41,7 +41,7 @@ const sourceText = function (source) {
   }
 };
 
-const parseOrdinal = function (date) {
+parseOrdinal = function (date) {
   switch (date) {
   case "1":
   case "21":
