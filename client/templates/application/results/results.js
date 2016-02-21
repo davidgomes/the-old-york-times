@@ -118,7 +118,7 @@ Template.results.events({
       fromDay: parseOrdinal(fromDate.getDate().toString()),
       fromDate: (monthList[fromDate.getMonth().toString()] + " " + fromDate.getFullYear().toString()),
       toDay: parseOrdinal(toDate.getDate().toString()),
-      toDate: (monthList[toDate.getMonth().toString()] + " " + toDate.getFullYear().toString()),
+      toDate: (monthList[toDate.getMonth().toString()] + " " + toDate.getFullYear().toString())
     });
 
     $('#map-container').fadeOut('slow');
