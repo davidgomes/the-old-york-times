@@ -11,7 +11,7 @@
     <div id="news-bar">
       <hr />
       <div class="row">
-        <div class="col-md-3 news-bar-left">ISSUE 1, &#169; 2016 The Old York Times</div>
+        <div class="col-md-3 news-bar-left">ISSUE 1 - &#169; 2016 The Old York Times</div>
         <div class="col-md-6 news-bar-center">{{location}}, {{fromDay}} <span class="small-font">of</span> {{fromDate}} <span class="small-font">to</span> {{toDay}} <span class="small-font">of</span> {{toDate}}</div>
         <div class="col-md-3 news-bar-right">{{money}} Shift Coins</div>
       </div>
@@ -20,18 +20,10 @@
 
     {{#if mainExists}}
     <div class="card news-article news-article-breaking">
-      <div class="media">
-        {{#if mainImg}}
-        <a class="media-left" href="#">
-          <img src="http://tse3.mm.bing.net/th?id=OIP.Mf20bbdb74f1282b4df2a9c1f17293ebeo0&w=173&h=138&c=7&rs=1&qlt=90&o=4&pid=1.1">
-        </a>
-        {{/if}}
-        <div class="media-body">
-          <h4 class="card-title">{{mainHeadline}}</h4>
-          <p class="card-text">{{mainText}}</p>
-        </div>
-        <p class="card-text pull-md-right"><small class="text-muted">By <a href="{{source}}" target="_blank">{{mainSourceText}}</a> in {{mainRegion}} on the {{mainDate}}</small></p>
-      </div>
+      <h4 class="card-title">{{mainHeadline}}</h4>
+      <p class="card-text">{{mainText}}</p>
+      <div class="clearfix"></div>
+      <p class="card-text"><small class="text-muted">By <a href="{{mainSource}}" target="_blank">{{mainSourceText}}</a> in {{capital mainRegion}} on the {{mainDate}}</small></p>
       <hr />
     </div>
     {{/if}}
@@ -65,7 +57,7 @@
     <h4 class="card-title">{{headline}}</h4>
     <p class="card-text">{{text}}</p>
     <div class="clearfix"></div>
-    <p class="card-text"><small class="text-muted">By <a href="{{source}}" target="_blank">{{sourceText}}</a> in region on the {{date}}</small></p>
+    <p class="card-text"><small class="text-muted">By <a href="{{source}}" target="_blank">{{sourceText}}</a> in {{capital region}} on the {{date}}</small></p>
     <hr />
   </div>
 </template>
@@ -83,7 +75,7 @@
     <div id="news-bar">
       <hr />
       <div class="row">
-        <div class="col-md-3 news-bar-left">ISSUE 1, &#169; 2016 The Old York Times</div>
+        <div class="col-md-3 news-bar-left">ISSUE 1 - &#169; 2016 The Old York Times</div>
         <div class="col-md-6 news-bar-center">{{location}}, {{fromDay}} <span class="small-font">of</span> {{fromDate}} <span class="small-font">to</span> {{toDay}} <span class="small-font">of</span> {{toDate}}</div>
         <div class="col-md-3 news-bar-right">{{money}} Shift Coins</div>
       </div>

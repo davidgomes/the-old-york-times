@@ -110,7 +110,6 @@ Template.results.events({
       }
     } else {
       regionName = getCountryNameFromID(currentCountryID);
-      console.log('heyyyy ' + currentCountryID + ' ' + regionName);
     }
 
     const fromDate = new Date(+dateSearchValues[0]);
@@ -149,6 +148,7 @@ Template.results.events({
         res.forEach((item) => {
           if (fs) {
             Session.set("mainNews", {
+              text: item.text,
               imageSrc: item.image_link,
               region: item.country,
               headline: item.headline,
@@ -161,6 +161,7 @@ Template.results.events({
             fs = false;
           } else {
             SelectedNews.insert({
+              text: item.text,
               imageSrc: item.image_link,
               region: item.country,
               headline: item.headline,

@@ -6,7 +6,6 @@ Meteor.methods({
       region: { type: String }
     }).validate({ startYear, endYear, region });
 
-
     const regionArray = ["North America", "South America", "Europe", "East Asia", "West Asia", "Africa", "Oceania"];
     let newsList = [];
 
@@ -18,7 +17,7 @@ Meteor.methods({
       console.log("Searching for " + region);
       newsList = News.find({ date: { $gt: startYear, $lt: endYear }, region: region }, { sort: { sort_id: 1 }, limit: 160 }).fetch();
     } else {
-      country = region.toLowerCase()
+      const country = region.toLowerCase();
       newsList = News.find({ date: { $gt: startYear, $lt: endYear }, country: country }, { sort: { sort_id: 1 }, limit: 160 }).fetch();
     }
 

@@ -49,6 +49,9 @@ Template.newspaper.helpers({
   mainText: function () {
     return Session.get("mainNews").text;
   },
+  mainSource: function () {
+    return Session.get("mainNews").source;
+  },
   mainSourceText: function () {
     return Session.get("mainNews").sourceText;
   },
@@ -128,11 +131,10 @@ Template.emptyNewspaper.helpers({
 });
 
 UI.registerHelper('capital', function(s, options) {
-  return ''
-  /*s = s.split(' ');
-  for(i=0; i<s.length; i++)
+  s = s.split(' ');
+  for(var i = 0; i < s.length; i++)
     s[i] = s[i].charAt(0).toUpperCase() + s[i].slice(1);
-  return s.join(' ');*/
+  return s.join(' ');
 });
 
 UI.registerHelper('ordinal', function(d, options) {
