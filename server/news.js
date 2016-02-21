@@ -1,4 +1,41 @@
+
 Meteor.methods({
+  'storeSearch': function(data){
+    var mainNews = data[1];
+    var newsObject = data[2];
+    var data = data[0]
+    console.log(data, mainNews, newsObject);
+    if(data.length == 0)
+      return '';
+    
+    res = Search.findOne({elements: data});
+    if(res != null)
+      return res._id;
+
+    console.log(Search.find().count());
+
+    id = Search.insert({elements: data, mainNews: mainNews, newsObject: newsObject});
+    console.log('news stored')
+    console.log(data, data.length);
+    return id
+  },
+  'loadSearch': function(id){
+    var res = Search.findOne(id);
+    var elements = res.elements;
+    
+    //Session.set('mainNews', res.mainNews);
+    //Session.set('newsObject', res.newsObject);
+
+    console.log(res.mainNews, res.newsObject);
+    console.log(elements)
+    //l = News.find({_id: {$in: elements}}).fetch();
+    l = []
+    for(var i=0; i<elements.length; i++)
+      l.push(News.findOne({headline: elements[i] }))
+    console.log('results', l)
+
+    return [l, res.mainNews, res.newsObject]
+  },
   'News.methods.getNews'({ startYear, endYear, region }) {
     new SimpleSchema({
       startYear: { type: Date },

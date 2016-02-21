@@ -79,7 +79,7 @@ Template.newspaper.helpers({
   },
   money: function () {
     return convertMoney(Session.get("newsObject").epoch);
-  }
+  },
 });
 
 const hideArrow = function () {
@@ -90,15 +90,19 @@ Template.newspaper.events({
   'click #black-arrow-link': function () {
     $('html, body').animate({scrollTop: 0 }, 1000);
     hideArrow();
+    $('#map-container').fadeIn('slow');
+    Session.set('showNewspaper', false);
   },
   'click #btnShare': function(){
     data = [];
-
+    console.log(SelectedNews.find().count());
     SelectedNews.find().forEach(function(el){
-      data[el._id] = 1;
+      data.push(el.headline);
     });
-    Meteor.call('storeSearch', data, function(e, v){
-      console.log('ok');
+    console.log(data)
+    Meteor.call('storeSearch', [data, Session.get('mainNews'), Session.get('newsObject')], function(e, id){
+      console.log('id', id);
+      console.log("/search/" + id)
     });
   }
 });
@@ -106,6 +110,10 @@ Template.newspaper.events({
 Template.newspaper.rendered = function () {
   //Session.set('showNewspaper', true);
   //$('html, body').animate({scrollTop: $('#newspaper').offset().top - 130 }, 2000);
+
+  $('#newspaper').delay(400).animate({
+    'opacity': 1
+  }, 2000);
 };
 
 Template.newsArticle.helpers({

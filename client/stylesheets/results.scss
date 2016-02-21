@@ -10,6 +10,13 @@
   display: block;
   background-color: white;
   color: #0275d8;
+  transition: background-color 1s;
+  transition: color 1s;
+}
+
+#btn-news:hover {
+  background-color: #0275d8;
+  color: white;
 }
 
 #search-description {

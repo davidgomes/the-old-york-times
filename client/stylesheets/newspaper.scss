@@ -66,6 +66,7 @@
   margin-bottom: 15px;
   padding: 10px;
   border: 1px #E5E5E5 solid;
+  opacity: 0;
 
   #news-header {
     margin-left: 2.5%;
@@ -228,8 +229,9 @@
 }
 
 #back-arrow {
+ /* z-index: 101;*/
   font-size: 4em;
   position: fixed;
-  top: 2%;
-  right: 2%;
+  right: 4%;
+  top: 15%;
 }

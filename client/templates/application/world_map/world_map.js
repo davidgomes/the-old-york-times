@@ -127,13 +127,13 @@ worldMapRendered = function () {
       Session.set("WorldVar", currentRegion);
 
       if (countryRegionObject.addTopMargin) {
-        $('#map-container').css('margin-top', '70px');
+        //$('#map-container').css('margin-top', '70px');
       }
 
       $.each(regions[countryRegion].countries, function (index, element) {
         $('.datamaps-subunit.' + element).css({
           'fill': regions[countryRegion].color,
-          //'stroke': regions[countryRegion].hoverColor,
+          'stroke': 'white',
           'stroke-width': 1
         });
       });
