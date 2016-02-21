@@ -143,6 +143,7 @@ loadNewpaper = function () {
         } else {
           SelectedNews.insert({
             text: item.text,
+            starred: false,
             imageSrc: item.image_link,
             region: item.country,
             headline: item.headline,

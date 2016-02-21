@@ -29,7 +29,7 @@
       <h4 class="card-title">{{mainHeadline}}</h4>
       <p class="card-text">{{mainText}}</p>
       <div class="clearfix"></div>
-      <p class="card-text"><small class="text-muted">by <a href="{{mainSource}}" target="_blank">{{mainSourceText}}</a> in {{capital mainRegion}} on the {{mainDate}}</small></p>
+      <p class="card-text"><small class="text-muted"><i class="fa fa-newspaper-o"></i> by <a href="{{mainSource}}" target="_blank">{{mainSourceText}}</a> in {{capital mainRegion}} on the {{mainDate}}</small></p>
       <hr />
     </div>
     {{/if}}
@@ -60,10 +60,10 @@
     {{#if img}}
     <img src="{{imageSrc}}" class="img-{{side}}"/>
     {{/if}}
-    <h4 class="card-title">{{#if img}}<a href="#" class="ban-image"><i class="fa fa-ban"></i></a>{{/if}} {{headline}}</h4>
+    <h4 class="card-title">{{#if img}}<a href="#" class="ban-image"><i class="fa fa-ban"></i></a>{{/if}} {{headline}} {{#unless starred}}<a href="#" class="star-image"><i class="fa fa-star-o"></i></a>{{/unless}}</h4>
     <p class="card-text">{{text}}</p>
     <div class="clearfix"></div>
-    <p class="card-text"><small class="text-muted">by <a href="{{source}}" target="_blank">{{sourceText}}</a> in {{capital region}} on the {{date}}</small></p>
+    <p class="card-text"><small class="text-muted"><i class="fa fa-newspaper-o"></i> by <a href="{{source}}" target="_blank">{{sourceText}}</a> in {{capital region}} on the {{date}}</small></p>
     <hr />
   </div>
 </template>
