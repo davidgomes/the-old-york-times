@@ -185,7 +185,7 @@ worldMapRendered = function () {
     evt.stopPropagation();
   });
 
-  $('#map-container').keydown(function (evt) {
+  $(window).keydown(function (evt) {
     if (evt.keyCode === 27) {
       leaveWorldState();
     }
