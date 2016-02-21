@@ -10,6 +10,7 @@ const sentences = ["The annals of history know nothing about this",
                    "So far nothing happened in this period... Maybe tomorrow",
                   "A secret organization erased all records of this time. Proceed with caution",
                   "Well, nice try, but this was a slow time"];
+const sides = ["left", "right"];
 
 const printDate = function (date) {
   const dateStr = date.getDate().toString() + " of " +
@@ -164,12 +165,11 @@ Template.results.events({
               categoryText: item.category,
               source: item.source,
               sourceText: sourceText(item.source),
-              side: ["left", "right"][Math.round(Math.round())]
+              side: sides[Math.round(Math.random())]
             });
           }
         });
 
-        console.log(SelectedNews.find({}).fetch());
         showArrow();
       }
     });
