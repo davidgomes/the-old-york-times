@@ -76,7 +76,7 @@ setSpinner = function () {
   }, 1000);
 };
 
-loadNewpaper = function () {
+loadNewspaper = function () {
   var regionName;
 
   if (currentCountryID === null) {
@@ -106,6 +106,23 @@ loadNewpaper = function () {
   $('#search-description').fadeOut('slow');
 
   $('#slider-container').css('position', 'fixed');
+};
+
+fillNewspaper = function () {
+  var regionName;
+
+  if (currentCountryID === null) {
+    if (currentRegion === "World") {
+      regionName = "World";
+    } else {
+      regionName = regions[currentRegion].name;
+    }
+  } else {
+    regionName = getCountryNameFromID(currentCountryID);
+  }
+
+  const fromDate = new Date(+dateSearchValues[0]);
+  const toDate = new Date(+dateSearchValues[1]);
 
   Meteor.call('News.methods.getNews', {
     startYear: new Date(+dateSearchValues[0]),
@@ -143,6 +160,7 @@ loadNewpaper = function () {
         } else {
           SelectedNews.insert({
             text: item.text,
+            starred: false,
             imageSrc: item.image_link,
             region: item.country,
             headline: item.headline,
@@ -197,10 +215,9 @@ Template.results.helpers({
   }
 });
 
-
-
 Template.results.events({
   'click #btn-news' : function () {
-    loadNewpaper();
+    loadNewspaper();
+    fillNewspaper();
   }
 });
