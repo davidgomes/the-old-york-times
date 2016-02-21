@@ -51,14 +51,14 @@ setupDatabase = function (){
     });
   }
 
-  const load2 = true, load2new = false;
+  const load2 = false, load2new = false;
   if (load2) {
     if (load2new) {
       StarredImages.remove({ });
     }
 
     const img2Data = Assets.getText('img-starred.json');
-    const img2Docs = JSON.parse(imgData);
+    const img2Docs = JSON.parse(img2Data);
     for (var i = 0; i < img2Docs.length; i++) {
       const dc = img2Docs[i];
 

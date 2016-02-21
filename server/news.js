@@ -49,17 +49,17 @@ Meteor.methods({
     console.log("Searching for " + startYear.toString() + " " + endYear.toString());
 
     if (region == "World") {
-      newsList = News.find({ date: { $gt: startYear, $lt: endYear } }, { sort: { score: -1, sort_id: 1 }, limit: 350 }).fetch();
+      newsList = News.find({ date: { $gt: startYear, $lt: endYear } }, { sort: { score: -1 }, limit: 18 }).fetch();
     } else if (_.contains(regionArray, region)) {
       console.log("Searching for " + region);
-      newsList = News.find({ date: { $gt: startYear, $lt: endYear }, region: region }, { sort: { score : -1, sort_id: 1 }, limit: 350 }).fetch();
+      newsList = News.find({ date: { $gt: startYear, $lt: endYear }, region: region }, { sort: { score : -1 }, limit: 18 }).fetch();
     } else {
       const country = region.toLowerCase();
-      newsList = News.find({ date: { $gt: startYear, $lt: endYear }, country: country }, { sort: { score : -1, sort_id: 1 }, limit: 350 }).fetch();
+      newsList = News.find({ date: { $gt: startYear, $lt: endYear }, country: country }, { sort: { score : -1 }, limit: 18 }).fetch();
     }
 
-    newsList = _.shuffle(newsList);
-    newsList = _.sample(newsList, 18);
+//    newsList = _.shuffle(newsList);
+//    newsList = _.sample(newsList, 18);
 
     newsList.forEach((item) => {
       const img = BannedImages.findOne({ headline: item.headline });
@@ -69,7 +69,7 @@ Meteor.methods({
       }
     });
 
-    newsList = _.sortBy(newsList, (item) => { return item.score; });
+//    newsList = _.sortBy(newsList, (item) => { return -item.score; });
 
     return newsList;
   },
