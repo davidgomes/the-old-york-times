@@ -1,18 +1,20 @@
 <template name="results">
-  <div id="results">
-    {{> slider}}
-    {{> worldMap}}
+  {{#if showResults}}
+    <div id="results">
+      {{> slider}}
+      {{> worldMap}}
 
-    <button type="button" id="btn-news" class="btn btn-primary">Get News</button>
+      <button type="button" id="btn-news" class="btn btn-primary">Get News</button>
 
-    <p id="search-description">(sarching for news in {{newsLocation}} from {{rangeFirst}} to {{rangeSecond}})</p>
+      <p id="search-description">(sarching for news in {{newsLocation}} from {{rangeFirst}} to {{rangeSecond}})</p>
 
-    {{#if showNewspaper}}
-      {{#if showEmpty}}
-        {{> emptyNewspaper}}
-      {{else}}
-        {{> newspaper}}
+      {{#if showNewspaper}}
+        {{#if showEmpty}}
+          {{> emptyNewspaper}}
+        {{else}}
+          {{> newspaper}}
+        {{/if}}
       {{/if}}
-    {{/if}}
-  </div>
+    </div>
+  {{/if}}
 </template>

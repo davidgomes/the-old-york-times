@@ -66,6 +66,10 @@ const showArrow = function () {
 };
 
 Template.results.helpers({
+  showResults: function () {
+    return Session.get('showResults');
+  },
+
   showNewspaper: function () {
     return Session.get("showNewspaper");
   },

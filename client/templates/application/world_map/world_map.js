@@ -44,7 +44,7 @@ currentCountry = null;
 currentRegion = "World";
 Session.set("WorldVar", "World");
 
-Template.worldMap.rendered = function () {
+worldMapRendered = function () {
   $.each(Datamaps.prototype.worldTopo.objects.world.geometries, function (index, element) {
     if (element.properties.name === 'Kosovo') element.id = 'Kosovo';
     if (element.properties.name === 'Somaliland') element.id = 'Somaliland';
@@ -201,4 +201,8 @@ Template.worldMap.rendered = function () {
   $(window).on('resize', function () {
     map.resize();
   });
+}
+
+Template.worldMap.rendered = function () {
+  worldMapRendered();
 };
