@@ -145,6 +145,20 @@
       }
     }
 
+    .img-left {
+      float: left;
+      padding: 3px;
+      margin-left: 2px;
+      margin-right: 5px;
+    }
+
+    .img-right {
+      float: right;
+      padding: 3px;
+      margin-left: 5px;
+      margin-right: 2px;
+    }
+
     .card-title {
       font-family: FenixRegular;
       font-size: 1.4em;
@@ -193,7 +207,7 @@
     text-align: center;
     font-family: FenixRegular;
     font-variant: small-caps;
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
 

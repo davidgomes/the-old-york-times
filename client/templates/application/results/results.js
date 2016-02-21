@@ -41,7 +41,7 @@ const sourceText = function (source) {
   }
 };
 
-parseOrdinal = function (date) {
+var parseOrdinal = function (date) {
   switch (date) {
   case "1":
   case "21":
@@ -163,7 +163,8 @@ Template.results.events({
               category: categoryShort(item.category),
               categoryText: item.category,
               source: item.source,
-              sourceText: sourceText(item.source)
+              sourceText: sourceText(item.source),
+              side: ["left", "right"][Math.round(Math.round())]
             });
           }
         });
