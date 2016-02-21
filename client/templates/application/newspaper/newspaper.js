@@ -91,12 +91,12 @@ Template.newspaper.events({
 
 Template.newspaper.rendered = function () {
   //Session.set('showNewspaper', true);
-  $('html, body').animate({scrollTop: $('#newspaper').offset().top + 3 }, 2000);
+  //$('html, body').animate({scrollTop: $('#newspaper').offset().top - 130 }, 2000);
 };
 
 Template.newsArticle.helpers({
   img: function () {
-    return this.img;
+    return !!this.imageSrc;
   }
 });
 
@@ -138,4 +138,3 @@ UI.registerHelper('capital', function(s, options) {
 UI.registerHelper('ordinal', function(d, options) {
   return parseOrdinal(d);
 });
-

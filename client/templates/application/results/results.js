@@ -110,6 +110,7 @@ Template.results.events({
 
     const fromDate = new Date(+dateSearchValues[0]);
     const toDate = new Date(+dateSearchValues[1]);
+
     Session.set("newsObject", {
       epoch: Math.floor((fromDate.getFullYear() + toDate.getFullYear()) / 2),
       location: regionName,
@@ -118,6 +119,8 @@ Template.results.events({
       toDay: parseOrdinal(toDate.getDate().toString()),
       toDate: (monthList[toDate.getMonth().toString()] + " " + toDate.getFullYear().toString())
     });
+
+    $('#map-container').fadeOut('slow');
 
     Meteor.call('News.methods.getNews', {
       startYear: new Date(+dateSearchValues[0]),
@@ -141,7 +144,7 @@ Template.results.events({
         res.forEach((item) => {
           if (fs) {
             Session.set("mainNews", {
-              img: !!Math.round(Math.random()),
+              imageSrc: item.image_link,
               region: item.country,
               headline: item.headline,
               date: printDate(item.date),
@@ -153,7 +156,7 @@ Template.results.events({
             fs = false;
           } else {
             SelectedNews.insert({
-              img: !!Math.round(Math.random()),
+              imageSrc: item.image_link,
               region: item.country,
               headline: item.headline,
               date: printDate(item.date),
@@ -165,6 +168,7 @@ Template.results.events({
           }
         });
 
+        console.log(SelectedNews.find({}).fetch());
         showArrow();
       }
     });

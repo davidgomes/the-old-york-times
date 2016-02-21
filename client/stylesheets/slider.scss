@@ -1,10 +1,24 @@
+$slider-width: 82%;
+
 #slider-container {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  z-index: 10200;
+  //background: linear-gradient(rgba(255,255, 255,1), rgba(255,255, 255,0));
+  background-color: white;
+  height: 125px;
+
+  #slider-dates {
+    width: $slider-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   #slider {
+    width: $slider-width;
+    margin-left: auto;
+    margin-right: auto;
+
     margin-top: 10px;
   }
 }

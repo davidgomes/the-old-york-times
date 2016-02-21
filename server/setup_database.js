@@ -9,6 +9,7 @@ setupDatabase = function (){
 
       News.insert({
         headline: dc.headline,
+        image_link: dc.image_link,
         date: new Date(dc.date),
         region: dc.region,
         country: dc.country,
