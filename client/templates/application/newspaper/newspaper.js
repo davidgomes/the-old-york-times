@@ -91,7 +91,7 @@ Template.newspaper.events({
 
 Template.newspaper.rendered = function () {
   //Session.set('showNewspaper', true);
-  $('html, body').animate({scrollTop: $('#newspaper').offset().top + 3 }, 2000);
+  $('html, body').animate({scrollTop: $('#newspaper').offset().top - 125 }, 2000);
 };
 
 Template.newsArticle.helpers({
@@ -133,4 +133,3 @@ UI.registerHelper('capital', function(s, options) {
     s[i] = s[i].charAt(0).toUpperCase() + s[i].slice(1);
   return s.join(' ');
 });
-
