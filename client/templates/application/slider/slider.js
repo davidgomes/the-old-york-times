@@ -78,6 +78,12 @@ Template.slider.rendered = function () {
     }
   });
 
+  slider.noUiSlider.on('end', function(){
+    if (Session.get("showNewspaper")) {
+      loadNewpaper();
+    }
+  });
+
   $('.noUi-value').eq(0).text('1500');
   $('.noUi-value').eq(1).text('1900');
   $('.noUi-value').eq(2).text('2016');
