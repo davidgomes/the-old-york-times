@@ -127,7 +127,7 @@ worldMapRendered = function () {
       Session.set("WorldVar", currentRegion);
 
       if (countryRegionObject.addTopMargin) {
-        $('#map-container').css('margin-top', '70px');
+        //$('#map-container').css('margin-top', '70px');
       }
 
       $.each(regions[countryRegion].countries, function (index, element) {
