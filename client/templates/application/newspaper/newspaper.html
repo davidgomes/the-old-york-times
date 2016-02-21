@@ -60,7 +60,7 @@
     {{#if img}}
     <img src="{{imageSrc}}" class="img-{{side}}"/>
     {{/if}}
-    <h4 class="card-title">{{headline}}</h4>
+    <h4 class="card-title">{{#if img}}<a href="#" class="ban-image"><i class="fa fa-ban"></i></a>{{/if}} {{headline}}</h4>
     <p class="card-text">{{text}}</p>
     <div class="clearfix"></div>
     <p class="card-text"><small class="text-muted">by <a href="{{source}}" target="_blank">{{sourceText}}</a> in {{capital region}} on the {{date}}</small></p>

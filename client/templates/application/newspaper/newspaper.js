@@ -112,6 +112,17 @@ Template.newsArticle.helpers({
   }
 });
 
+Template.newsArticle.events({
+  'click .ban-image': function (event) {
+    event.preventDefault();
+
+    SelectedNews.update({ _id: this._id }, { $set: { imageSrc: false} });
+    Meteor.call('News.methods.banImage', {
+      headline: this.headline
+    });
+  }
+});
+
 Template.emptyNewspaper.helpers({
   location: function () {
     return Session.get("newsObject").location;
