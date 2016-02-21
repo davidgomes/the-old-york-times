@@ -49,5 +49,16 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    background-color: white;
+    transition: background-color 1s;
+    transition: color 1s;
+    color: #0275d8;
   }
+
+  #begin-btn:hover {
+    color: white;
+    background-color: #0275d8;
+  }
+
+
 }
