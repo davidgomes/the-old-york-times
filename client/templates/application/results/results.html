@@ -6,7 +6,7 @@
 
       <button type="button" id="btn-news" class="btn btn-primary">Get News</button>
 
-      <p id="search-description">(searching for news in {{newsLocation}} from {{rangeFirst}} to {{rangeSecond}}{{#if spinning}} <i class="fa fa-circle-o-notch fa-spin"></i>{{/if}})</p>
+      <p id="search-description">({{#if spinning}} <i class="fa fa-circle-o-notch fa-spin"></i>{{/if}} searching for news in {{newsLocation}} from {{rangeFirst}} to {{rangeSecond}})</p>
 
       {{#if showNewspaper}}
         {{#if showEmpty}}
