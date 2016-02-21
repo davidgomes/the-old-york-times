@@ -1,13 +1,16 @@
 SelectedNews = new Mongo.Collection(null);
 
 Session.set("newsEmpty", false);
+
 const monthList = ["January", "February", "March", "April", "May", "June",
                    "July", "August", "September", "October", "November", "December"];
+
 const sentences = ["The annals of history know nothing about this",
                   "It seems like you've reached a forgotten piece of our existence",
                    "So far nothing happened in this period... Maybe tomorrow",
                   "A secret organization erased all records of this time. Proceed with caution",
                   "Well, nice try, but this was a slow time"];
+
 const printDate = function (date) {
   const dateStr = date.getDate().toString() + " of " +
           monthList[date.getMonth().toString()] + ", " +
