@@ -130,6 +130,14 @@ Template.worldMap.rendered = function () {
         $('#map-container').css('margin-top', '70px');
       }
 
+      $.each(regions[countryRegion].countries, function (index, element) {
+        $('.datamaps-subunit.' + element).css({
+          'fill': regions[countryRegion].color,
+          //'stroke': regions[countryRegion].hoverColor,
+          'stroke-width': 1
+        });
+      });
+
       $.each(regions, function (regionName, regionObject) {
         if (regionName !== countryRegion) {
           $.each(regionObject.countries, function (index, element) {
