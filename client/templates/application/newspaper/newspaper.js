@@ -1,3 +1,4 @@
+
 const convertEpoch = function (date) {
   if (date < 1900) {
     return "medieval";
@@ -89,6 +90,16 @@ Template.newspaper.events({
   'click #black-arrow-link': function () {
     $('html, body').animate({scrollTop: 0 }, 1000);
     hideArrow();
+  },
+  'click #btnShare': function(){
+    data = [];
+
+    SelectedNews.find().forEach(function(el){
+      data[el._id] = 1;
+    });
+    Meteor.call('storeSearch', data, function(e, v){
+      console.log('ok');
+    });
   }
 });
 
