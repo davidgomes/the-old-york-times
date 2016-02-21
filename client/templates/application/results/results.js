@@ -65,7 +65,106 @@ const showArrow = function () {
   $("#back-arrow").show();
 };
 
+setSpinner = function () {
+  if (Session.get("isSpinning")) {
+    return;
+  }
+
+  Session.set("isSpinning", true);
+  Meteor.setTimeout(() => {
+    Session.set("isSpinning", false);
+  }, 1000);
+};
+
+loadNewpaper = function () {
+  var regionName;
+
+  if (currentCountryID === null) {
+    if (currentRegion === "World") {
+      regionName = "World";
+    } else {
+      regionName = regions[currentRegion].name;
+    }
+  } else {
+    regionName = getCountryNameFromID(currentCountryID);
+  }
+
+  const fromDate = new Date(+dateSearchValues[0]);
+  const toDate = new Date(+dateSearchValues[1]);
+
+  Session.set("newsObject", {
+    epoch: Math.floor((fromDate.getFullYear() + toDate.getFullYear()) / 2),
+    location: regionName,
+    fromDay: parseOrdinal(fromDate.getDate().toString()),
+    fromDate: (monthList[fromDate.getMonth().toString()] + " " + fromDate.getFullYear().toString()),
+    toDay: parseOrdinal(toDate.getDate().toString()),
+    toDate: (monthList[toDate.getMonth().toString()] + " " + toDate.getFullYear().toString())
+  });
+
+  $('#map-container').fadeOut('slow');
+  $('#btn-news').fadeOut('slow');
+  $('#search-description').fadeOut('slow');
+
+  $('#slider-container').css('position', 'fixed');
+
+  Meteor.call('News.methods.getNews', {
+    startYear: new Date(+dateSearchValues[0]),
+    endYear: new Date(+dateSearchValues[1]),
+    region: regionName
+  }, (err, res) => {
+    if (err) {
+      alert(err);
+    } else {
+      if (res.length == 0) {
+        Session.set("newsEmpty", true);
+        Session.set('emptyText', sentences[Math.floor(5 * Math.random())]);
+      } else {
+        Session.set("newsEmpty", false);
+      }
+
+      Session.set('showNewspaper', true);
+      var fs = true;
+      SelectedNews.remove({ });
+      Session.set("mainNews", { });
+      res.forEach((item) => {
+        if (fs) {
+          Session.set("mainNews", {
+            text: item.text,
+            imageSrc: item.image_link,
+            region: item.country,
+            headline: item.headline,
+            date: printDate(item.date),
+            category: categoryShort(item.category),
+            categoryText: item.category,
+            source: item.source,
+            sourceText: sourceText(item.source)
+          });
+          fs = false;
+        } else {
+          SelectedNews.insert({
+            text: item.text,
+            imageSrc: item.image_link,
+            region: item.country,
+            headline: item.headline,
+            date: printDate(item.date),
+            category: categoryShort(item.category),
+            categoryText: item.category,
+            source: item.source,
+            sourceText: sourceText(item.source),
+            side: sides[Math.round(Math.random())]
+          });
+        }
+      });
+
+      showArrow();
+    }
+  });
+};
+
 Template.results.helpers({
+  spinning: function () {
+    return Session.get("isSpinning");
+  },
   showResults: function () {
     return Session.get('showResults');
   },
@@ -98,89 +197,10 @@ Template.results.helpers({
   }
 });
 
+
+
 Template.results.events({
   'click #btn-news' : function () {
-    var regionName;
-
-    if (currentCountryID === null) {
-      if (currentRegion === "World") {
-        regionName = "World";
-      } else {
-        regionName = regions[currentRegion].name;
-      }
-    } else {
-      regionName = getCountryNameFromID(currentCountryID);
-    }
-
-    const fromDate = new Date(+dateSearchValues[0]);
-    const toDate = new Date(+dateSearchValues[1]);
-
-    Session.set("newsObject", {
-      epoch: Math.floor((fromDate.getFullYear() + toDate.getFullYear()) / 2),
-      location: regionName,
-      fromDay: parseOrdinal(fromDate.getDate().toString()),
-      fromDate: (monthList[fromDate.getMonth().toString()] + " " + fromDate.getFullYear().toString()),
-      toDay: parseOrdinal(toDate.getDate().toString()),
-      toDate: (monthList[toDate.getMonth().toString()] + " " + toDate.getFullYear().toString())
-    });
-
-    $('#map-container').fadeOut('slow');
-    $('#btn-news').fadeOut('slow');
-    $('#search-description').fadeOut('slow');
-
-    $('#slider-container').css('position', 'fixed');
-
-    Meteor.call('News.methods.getNews', {
-      startYear: new Date(+dateSearchValues[0]),
-      endYear: new Date(+dateSearchValues[1]),
-      region: regionName
-    }, (err, res) => {
-      if (err) {
-        alert(err);
-      } else {
-        if (res.length == 0) {
-          Session.set("newsEmpty", true);
-          Session.set('emptyText', sentences[Math.floor(5 * Math.random())]);
-        } else {
-          Session.set("newsEmpty", false);
-        }
-
-        Session.set('showNewspaper', true);
-        var fs = true;
-        SelectedNews.remove({ });
-        Session.set("mainNews", { });
-        res.forEach((item) => {
-          if (fs) {
-            Session.set("mainNews", {
-              text: item.text,
-              imageSrc: item.image_link,
-              region: item.country,
-              headline: item.headline,
-              date: printDate(item.date),
-              category: categoryShort(item.category),
-              categoryText: item.category,
-              source: item.source,
-              sourceText: sourceText(item.source)
-            });
-            fs = false;
-          } else {
-            SelectedNews.insert({
-              text: item.text,
-              imageSrc: item.image_link,
-              region: item.country,
-              headline: item.headline,
-              date: printDate(item.date),
-              category: categoryShort(item.category),
-              categoryText: item.category,
-              source: item.source,
-              sourceText: sourceText(item.source),
-              side: sides[Math.round(Math.random())]
-            });
-          }
-        });
-
-        showArrow();
-      }
-    });
+    loadNewpaper();
   }
 });
