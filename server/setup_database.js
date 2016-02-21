@@ -1,3 +1,12 @@
+function capital(s){
+  if(s == null)
+    return ''
+  s = s.split(' ');
+  for(var i = 0; i < s.length; i++)
+    s[i] = s[i].charAt(0).toUpperCase() + s[i].slice(1);
+  return s.join(' ');
+}
+
 setupDatabase = function (){
   News._ensureIndex({ "date": 1 });
 
@@ -11,7 +20,7 @@ setupDatabase = function (){
         headline: dc.headline,
         image_link: dc.image_link,
         date: new Date(dc.date),
-        region: dc.region,
+        region: capital(dc.region),
         country: dc.country,
         source: dc.source,
         category: dc.category,
