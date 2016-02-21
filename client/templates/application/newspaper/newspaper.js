@@ -95,6 +95,10 @@ Template.newspaper.events({
 Template.newspaper.rendered = function () {
   //Session.set('showNewspaper', true);
   //$('html, body').animate({scrollTop: $('#newspaper').offset().top - 130 }, 2000);
+
+  $('#newspaper').animate({
+    'opacity': 1
+  }, 'slow');
 };
 
 Template.newsArticle.helpers({
