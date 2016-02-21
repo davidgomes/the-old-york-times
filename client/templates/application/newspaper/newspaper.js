@@ -90,6 +90,8 @@ Template.newspaper.events({
     $('html, body').animate({scrollTop: 0 }, 1000);
     hideArrow();
     $('#map-container').fadeIn('slow');
+    $('#btn-news').fadeIn('slow');
+    $('#search-description').fadeIn('slow');
     $('#slider-container').css('position', 'static');
     Session.set('showNewspaper', false);
   }
