@@ -91,7 +91,7 @@ Template.newspaper.events({
 
 Template.newspaper.rendered = function () {
   //Session.set('showNewspaper', true);
-  $('html, body').animate({scrollTop: $('#newspaper').offset().top - 125 }, 2000);
+  $('html, body').animate({scrollTop: $('#newspaper').offset().top - 130 }, 2000);
 };
 
 Template.newsArticle.helpers({

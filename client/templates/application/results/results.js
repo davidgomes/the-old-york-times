@@ -110,6 +110,7 @@ Template.results.events({
 
     const fromDate = new Date(+dateSearchValues[0]);
     const toDate = new Date(+dateSearchValues[1]);
+
     Session.set("newsObject", {
       epoch: Math.floor((fromDate.getFullYear() + toDate.getFullYear()) / 2),
       location: regionName,
