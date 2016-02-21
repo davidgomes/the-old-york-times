@@ -133,7 +133,7 @@ worldMapRendered = function () {
       $.each(regions[countryRegion].countries, function (index, element) {
         $('.datamaps-subunit.' + element).css({
           'fill': regions[countryRegion].color,
-          //'stroke': regions[countryRegion].hoverColor,
+          'stroke': 'white',
           'stroke-width': 1
         });
       });
