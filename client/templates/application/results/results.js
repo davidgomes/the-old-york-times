@@ -104,8 +104,7 @@ loadNewspaper = function () {
   $('#map-container').fadeOut('slow');
   $('#btn-news').fadeOut('slow');
   $('#search-description').fadeOut('slow');
-
-  $('#slider-container').css('position', 'fixed');
+  $('#slider-container').fadeOut('slow');
 };
 
 fillNewspaper = function () {
