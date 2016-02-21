@@ -106,7 +106,6 @@ Template.results.events({
       }
     } else {
       regionName = getCountryNameFromID(currentCountryID);
-      console.log('heyyyy ' + currentCountryID + ' ' + regionName);
     }
 
     const fromDate = new Date(+dateSearchValues[0]);
