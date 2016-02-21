@@ -1,0 +1,12 @@
+cd Wiki
+python wiki_parser.py
+python wikiArticles.py
+cd ..
+python2 topic_classifier.py
+
+ONTHISDAY:
+python location_classifier.py
+
+MERGE
+python join_files.py
+python2 fill_image.py

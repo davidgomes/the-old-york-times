@@ -1,0 +1,1918 @@
+(lp0
+(Vdavid bowie appears in role of "elephant man" in denver
+p1
+I0
+tp2
+a(Vchina pr launch 1st intercontinental rocket
+p3
+I4
+tp4
+a(Vcontinuous traffic jam extends 176 km north of lyons, france
+p5
+I5
+tp6
+a(Vsoyuz 38 carries 2 cosmonauts (1 cuban) to salyut 6 space station
+p7
+I4
+tp8
+a(V"perfectly frank" opens at helen hayes theater nyc for 16 performances
+p9
+I0
+tp10
+a(Vphillies & sf giants end their game at 3:11 am
+p11
+I3
+tp12
+a(Vsoyuz t-2 returns to earth
+p13
+I4
+tp14
+a(Vwalt disney's "fox & the hound" released
+p15
+I2
+tp16
+a(Vreinhold messner of italy is 1st to solo ascent mt everest
+p17
+I5
+tp18
+a(Vmrs shakuntala devi mentally multiplies 2 13-digit #s in 28 sec
+p19
+I4
+tp20
+a(V68th women's australian open: barbara jordan beats sharon walsh (6-3, 6-3)
+p21
+I3
+tp22
+a(Vcrew of soyuz 36 returns to earth aboard soyuz 35
+p23
+I4
+tp24
+a(Vsamuel doe takes control of liberia in a coup d'etat, ending over 130 years of national democratic presidential succession.
+p25
+I5
+tp26
+a(Vangola revises its constitution
+p27
+I5
+tp28
+a(Vkings tie nhl rec with 2 shorthanded playoff goals in a pd vs isles
+p29
+I3
+tp30
+a(V"blues brothers" with dan akwoyd & john belushi opens in 594 theaters
+p31
+I0
+tp32
+a(Vus performs nuclear test at nevada test site
+p33
+I5
+tp34
+a(Vlinda ronstadt opens in "pirates of penzance" on broadway
+p35
+I0
+tp36
+a(Vjoanne carner wins lpga lady keystone golf open
+p37
+I3
+tp38
+a(Vpaul mccartney releases "mccartney ii" album
+p39
+I0
+tp40
+a(Vthe aids epidemic is formally recognized by medical professionals in san francisco, california.
+p41
+I5
+tp42
+a(Vpakistan all out 62 v australia at waca, lillee 5-18
+p43
+I3
+tp44
+a(V"caveman" with ringo premieres
+p45
+I2
+tp46
+a(V2 climbers fall 550 m down cliff near angel falls, venezuela
+p47
+I3
+tp48
+a(Vphillies 3rd baseman mike schmidt wins his 2nd consecutive nl mvp
+p49
+I3
+tp50
+a(V2nd space shuttle mission-columbia 2-returns to earth
+p51
+I4
+tp52
+a(Vharrison williams (sen-d-nj) convicted on fbi abscam charges
+p53
+I5
+tp54
+a(V39 unification church couples wed in germany
+p55
+I5
+tp56
+a(Vchina's communist party condemns late mao zedong's policy
+p57
+I5
+tp58
+a(Vaccording to south africa, ciskei gains independence not recognized as an independent country outside south africa
+p59
+I5
+tp60
+a(Vmajor iranian offensive mounted on central front
+p61
+I5
+tp62
+a(Vus president regan fires 11,500 striking air traffic controllers
+p63
+I5
+tp64
+a(Vus supreme court rules states could require, with some exceptions, parental notification when teen-age girls sought abortions
+p65
+I5
+tp66
+a(V80th women's french open: hana mandlikova beats sylvia hanika (6-2, 6-4)
+p67
+I3
+tp68
+a(Visraeli f-15/f-16 destroys alleged iraqi plutonium production facility
+p69
+I5
+tp70
+a(Vchrysler corp reports largest corporate losses in us history
+p71
+I1
+tp72
+a(Vbaseball players begin a 50 day strike, their 3rd strike
+p73
+I3
+tp74
+a(Vsimon gray's "quartermaine's terms" premieres in london
+p75
+I0
+tp76
+a(Vindia all out 63 in one-day international v australia
+p77
+I3
+tp78
+a(Vspacelab i arrives at kennedy space center
+p79
+I4
+tp80
+a(Vnfl players begin a 57 day strike
+p81
+I3
+tp82
+a(Vsandra haynie wins lpga rochester golf international
+p83
+I3
+tp84
+a(Vguatemala military coup under gen rios montt, president romeo lucas flees
+p85
+I5
+tp86
+a(Vmt palomar observatory 1st to detect halley's comet on 13th return
+p87
+I4
+tp88
+a(V1st ncaa women's basketball championship: la tech beats cheney 76-62
+p89
+I3
+tp90
+a(V"freezer bowl", bengals beat chargers in -59\uc9f8f (-51\uc9f8c) to win afc championship
+p91
+I3
+tp92
+a(Vcdc report on aids symptoms in three hemophiliacs
+p93
+I5
+tp94
+a(Vcbs mystery theater final episode on radio after 8 years
+p95
+I0
+tp96
+a(Vgeneral reynaldo bignone sworn in as president of argentina
+p97
+I5
+tp98
+a(Vfirst issue of "usa today" published by gannett co inc
+p99
+I1
+tp100
+a(V5th space shuttle mission-columbia 5-launched 1st coml flight
+p101
+I4
+tp102
+a(Vflight readiness firing of challenger's main engines; 20 seconds
+p103
+I4
+tp104
+a(Vayako okamoto wins lpga arizona copper golf classic
+p105
+I3
+tp106
+a(V"blues in the night" opens at rialto theater nyc for 53 performances
+p107
+I0
+tp108
+a(Vrenaldo nehemiah of us sets record for 110 m hurdles, 12.93 sec
+p109
+I3
+tp110
+a(Vaust-wi one-day game that produced a privy council libel case
+p111
+I5
+tp112
+a(V"snowplow game", after a snowstorm holds both new england and miami scoreless, mark henderson, a convict on work release, on order of patriots coach ron meyer, clears the path for john smith's attempt, which wins the game for the patriots, 3-0 (the practice of using snow plows during games is later banned)
+p113
+I3
+tp114
+a(Vfcc drops limits on duration & frequency of tv ads
+p115
+I0
+tp116
+a(Volof palme forms swedish government
+p117
+I5
+tp118
+a(Vpope john paul ii prays for an end to martial law in poland
+p119
+I5
+tp120
+a(Vmichael jackson's "thriller" album goes #1 & stays #1 for 37 weeks
+p121
+I0
+tp122
+a(Vnhl institutes a 5 minute sudden death overtime period
+p123
+I3
+tp124
+a(Vchina performs nuclear test at lop nor, prc
+p125
+I5
+tp126
+a(Vwibc championship tournament in las vegas, attracts 75,480 women bowlers for 83-day event
+p127
+I3
+tp128
+a(Variel sharon resigns from israeli government after an inquiry shows he was indirectly responsible for the killings of hundreds of people in 1982
+p129
+I5
+tp130
+a(Vbruins 3-isles 7-wales conference championship-isles hold 2-1 lead
+p131
+I3
+tp132
+a(V"trading places", "ghostbusters" & "gremlins" premiere
+p133
+I2
+tp134
+a(Vcosmonauts titov & strekalov are saved from exploding soyuz t-10
+p135
+I4
+tp136
+a(Vfire in nassermeer, egypt, kills 357
+p137
+I5
+tp138
+a(Vzimbabwe opposition leader joshua nkomo flees to botswana
+p139
+I5
+tp140
+a(Vus president ronald reagan introduces strategic defense initiative ("star wars")
+p141
+I5
+tp142
+a(Vportugal's soares' partido socialista wins parliamentary election
+p143
+I5
+tp144
+a(Vnancy lopez wins lpga j&b scotch pro-am golf tournament
+p145
+I3
+tp146
+a(Vsts-9 vehicle moves to vandenberg afb due to srb nozzle problem
+p147
+I5
+tp148
+a(Vhighest price paid for painting by a living artist 960,200 pounds - miro
+p149
+I0
+tp150
+a(Vjanet coles wins lpga lady michelob golf tournament
+p151
+I3
+tp152
+a(Vjoseph kreckman sets record of 2,215 clay pigeons shot in an hour
+p153
+I3
+tp154
+a(V"dance a little closer" opens & closes at minskoff theater nyc
+p155
+I0
+tp156
+a(V2nd ncaa women's basketball championship: usc beats louisiana tech 69-67
+p157
+I3
+tp158
+a(Vtennis ace arthur ashe undergoes double bypass heart surgery
+p159
+I3
+tp160
+a(V3rd ncaa women's basketball championship: usc beats tennessee 72-61
+p161
+I3
+tp162
+a(V"pretty mess" by vanity peaks at #75
+p163
+I0
+tp164
+a(V19th academy of country music awards: alabama, lee greenwood, and janie fricke win
+p165
+I0
+tp166
+a(Vamber kvanli, of minnesota, crowned america's junior miss
+p167
+I0
+tp168
+a(V73rd men's australian open: mats wilander beats kevin curren (6-7, 6-4, 7-6, 6-2)
+p169
+I3
+tp170
+a(Vmanuela manleeva wins 3 singles tennis matches in one day
+p171
+I3
+tp172
+a(Vtatyana kazankina of ussr sets 3k woman record (8:22.62) in leningrad
+p173
+I3
+tp174
+a(Vsts 41-d vehicle again moves out to launch pad
+p175
+I4
+tp176
+a(Vcbs' premiere of "murder she wrote", starring angela landsbury
+p177
+I0
+tp178
+a(Valexander calder's "big crinkly" sells for $852,000
+p179
+I0
+tp180
+a(Vcyndi lauper's 1st #1 "time after times"
+p181
+I0
+tp182
+a(Vnyc subway gunman bernhard goetz surrenders to police in nh
+p183
+I5
+tp184
+a(Vussr announces it will not participate in los angeles summer olympics
+p185
+I5
+tp186
+a(Vfarewell concert of "doe maar" in den bosch neth
+p187
+I0
+tp188
+a(Vwash caps bengt gustafsson scores 5 goals to beat phila 7-1
+p189
+I3
+tp190
+a(Vus performs nuclear test at nevada test site
+p191
+I5
+tp192
+a(Vuk signs agreement with china to return hong kong to china in 1997
+p193
+I5
+tp194
+a(Vvicki fergon wins lpga s&h golf classic
+p195
+I3
+tp196
+a(Vtv soap "edge of night" ends 28 year run
+p197
+I0
+tp198
+a(V1st london performance of musical "stepping out" presented
+p199
+I0
+tp200
+a(Vdow jones industrial average rose above 1,500 level for 1st time
+p201
+I1
+tp202
+a(Vpc keith blakelock is murdered as riots erupt in the broadwater farm suburb of london.
+p203
+I5
+tp204
+a(Vcyclist joop zoetemelk becomes world champion
+p205
+I3
+tp206
+a(Vfrench government denies knowledge of attack on rainbow warrior
+p207
+I5
+tp208
+a(Vfrance performs nuclear test at muruora island
+p209
+I5
+tp210
+a(Vcarlos lopes runs world record marathon (2:07:12)
+p211
+I3
+tp212
+a(Vcold wave damages 90% of florida's citrus crop
+p213
+I5
+tp214
+a(Vmatti nykanen of finland set a world ski jump record of 623'
+p215
+I3
+tp216
+a(Vjerry rice begins nfl streak of 100+ consecutive games with a reception
+p217
+I3
+tp218
+a(Vnew orleans saints are sold for $70,204,000
+p219
+I3
+tp220
+a(Vsusan akin (miss), 21, crowned 59th miss america 1986
+p221
+I0
+tp222
+a(V-61°f (-52°c), maybell, colorado (state record)
+p223
+I5
+tp224
+a(Vjim kelly (houston usfl) passes for pro football record 574 yds
+p225
+I3
+tp226
+a(Vmike gatting & graeme fowler both scores 200 v india
+p227
+I3
+tp228
+a(Vus dollar is worth ÿ3.9355 (netherlands)
+p229
+I5
+tp230
+a(Vbody of nazi concentration camp doctor dr josef mengele located & exhumed
+p231
+I5
+tp232
+a(Vsouth africa's cosatu union centre forms
+p233
+I5
+tp234
+a(V18th space shuttle mission (51-g)-discovery 5 launched
+p235
+I4
+tp236
+a(Vrajiv gandhi announces punjab state elections in india
+p237
+I5
+tp238
+a(Vmichael gross swims world record 800m freestyle (7:38.75)
+p239
+I3
+tp240
+a(Vgeneral strike against pinochet regime in chile
+p241
+I5
+tp242
+a(Vghorbanifar 1st suggests diversion of cash to contras, says north
+p243
+I5
+tp244
+a(V"jerome kern goes to hollywood" opens at ritz theater nyc for 13 performances
+p245
+I0
+tp246
+a(V10 killed & 60 injured at eta-bomb attack in madrid
+p247
+I5
+tp248
+a(V72nd rose bowl: #13 ucla beats #4 iowa, 45-28; iowa's all-american running back, ronnie harmon, fumbles the ball 4 times in his last game.
+p249
+I3
+tp250
+a(Vrecord 3 grand slams hit in game tx vs balt (harrah, sheets & dwyer)
+p251
+I3
+tp252
+a(V167 die when mexicana airlines boeing 727 crashes
+p253
+I5
+tp254
+a(Vsoyuz t-15 carries 2 cosmonauts to soviet space station mir
+p255
+I4
+tp256
+a(Vhouston's mike scott (18-10) wins nl cy young
+p257
+I3
+tp258
+a(Vcia director william casey suffers a cerebral seizure
+p259
+I5
+tp260
+a(Vingrid kristiansen of norway sets 10k woman's record (30:13.74)
+p261
+I3
+tp262
+a(Vhaemers gang robs gold transport in belgium of 35 million bf
+p263
+I5
+tp264
+a(V7.5 earthquake strikes san salvador, el salvador
+p265
+I5
+tp266
+a(V24th tennis fed cup: usa beats czechoslovakia in prague czech (3-0)
+p267
+I3
+tp268
+a(V"captain eo" with michael jackson premieres
+p269
+I2
+tp270
+a(Vpresident reagan orderes 2 poseidon-class submarines be dismantled
+p271
+I5
+tp272
+a(Vmordechai vanunu, who revealed details of israel covert nuclear program to british media, was kidnapped in rome, italy.
+p273
+I5
+tp274
+a(Vtascc, a superconducting cyclotron at the chalk river laboratories, was officially opened.
+p275
+I4
+tp276
+a(V"singin' in the rain" closes at gershwin theater nyc after 367 performances
+p277
+I0
+tp278
+a(Vayako okamoto wins lpga cellular one-ping golf championship
+p279
+I3
+tp280
+a(Vnasa launches palapa b2p
+p281
+I4
+tp282
+a(Vmen's figure skating championship in cincinnati won by brian orser (can)
+p283
+I3
+tp284
+a(Vussr performs nuclear test
+p285
+I5
+tp286
+a(Vpope john paul ii arrives in los angeles for a two-day papal visit, and addresses u.s. entertainment leaders
+p287
+I5
+tp288
+a(Vwilliam h webster replaces robert m gates as 14th director of cia
+p289
+I5
+tp290
+a(Vmidnight rockers beat buddy rose & doug somers for awa world tag team
+p291
+I3
+tp292
+a(Vwilliam j casey, ends term as 13th director of cia
+p293
+I5
+tp294
+a(Vjack sikma (milwaukee) begins nba free throw streak of 51 games
+p295
+I5
+tp296
+a(Vval skinner wins lpga mastercard international golf pro-am
+p297
+I3
+tp298
+a(Vdavid boon's 5th test cricket century, 143 v nz at brisbane
+p299
+I3
+tp300
+a(Vmathias rust, 18 year old west german pilot, makes unauthorized landing near red square, moscow in ussr
+p301
+I5
+tp302
+a(V"mack lobell" set harness racing's trotting mil (1:52)
+p303
+I3
+tp304
+a(Vfederal judge throws out bette midler's $10 million suit against ford motor co, who used a sound alike voice for their tv commercials
+p305
+I0
+tp306
+a(Vwrestler jim neidhart indicted for assaulting a flight attendant
+p307
+I3
+tp308
+a(Vamerican engineer ben linder is killed in an ambush by u.s.-funded contras in northern nicaragua.
+p309
+I5
+tp310
+a(Va bomb blast in a johannesburg video-game arcade kills an unborn baby and injures ten people
+p311
+I5
+tp312
+a(V10 die as us air force jet crashed into a ramada inn near indianapolis
+p313
+I5
+tp314
+a(Vduchess of windsor's jewels auctioned for £31,380,197
+p315
+I5
+tp316
+a(Vdick howser retires from managing kc royals, due to brain tumor
+p317
+I3
+tp318
+a(V1st jockey to win 9 races in 1 day (chris antley at belmont)
+p319
+I3
+tp320
+a(Vman armed with explosives blows himself up in 125 st subway station (nyc)
+p321
+I5
+tp322
+a(V2nd soul train music awards: michael jackson, whitney houston win
+p323
+I0
+tp324
+a(Vus olympic diver greg louganis hits his head on diving board
+p325
+I3
+tp326
+a(V49th pga seniors golf championship: gary player
+p327
+I3
+tp328
+a(Vcornell confirms grad student source of worst computer sabotage
+p329
+I5
+tp330
+a(Vradio shack announces tandy 1000 sl computer
+p331
+I4
+tp332
+a(V"les miserables" opens at shubert theatre, la
+p333
+I0
+tp334
+a(V38th berlin international film festival: "red sorgum" wins the golden bear
+p335
+I2
+tp336
+a(Vstefka kostadinova high jumps indoor world record (2.06 m)
+p337
+I3
+tp338
+a(Vmaryland stops sale of cheap pistols on jan 1, 1990
+p339
+I5
+tp340
+a(Vphoenix cardinals play 1st regular-season nfl game
+p341
+I3
+tp342
+a(Vthe michael hughes bridge in sligo, ireland is officially opened.
+p343
+I5
+tp344
+a(V8th golden raspberry awards: leonard part 6 wins
+p345
+I2
+tp346
+a(V"mail" closes at music box theater nyc after 36 performances
+p347
+I0
+tp348
+a(Vnfl pro bowl: afc beats nfc 15-6
+p349
+I3
+tp350
+a(Vrobin givens & mike tyson appear on barbara walter's show
+p351
+I0
+tp352
+a(Vmike tyson sues to break contract with manager bill cayton
+p353
+I3
+tp354
+a(Vbenazir bhutto named 1st female prime minister of a muslim country (pakistan)
+p355
+I5
+tp356
+a(Vmike tyson kos tony tubbs in 2 for heavyweight boxing title
+p357
+I3
+tp358
+a(Vvladimir titov & musa manarov return to earth (a year) with chretien
+p359
+I4
+tp360
+a(Vvoyager 2 flies past neptune
+p361
+I4
+tp362
+a(V2 french tv newsmen arrested for trying to plant fake bombs on 3 airlines at jfk airport in security test
+p363
+I5
+tp364
+a(V1989 nfl draft: troy aikman from ucla first pick by dallas cowboys
+p365
+I3
+tp366
+a(Vthe western australian towns of kalgoorlie and boulder amalgamate to form the city of kalgoorlie-boulder.
+p367
+I5
+tp368
+a(V10th big east men's basketball tournament: georgetown beats syracuse, 88-79
+p369
+I3
+tp370
+a(Vmembers of 1949 oklahoma football team cancelled an april reunion because of deplorable conduct of oklahoma players
+p371
+I3
+tp372
+a(V62nd national spelling bee: scott isaacs wins spelling spoliator
+p373
+I3
+tp374
+a(Vpolice arrest writer vaclav havel in prague
+p375
+I5
+tp376
+a(Voregon begins taking bids on nba games
+p377
+I3
+tp378
+a(V2nd government of lubbers falls
+p379
+I5
+tp380
+a(V51st ncaa men's basketball championship: mich beats seton hall 80-79 (ot)
+p381
+I3
+tp382
+a(Vnolan ryan strikes out his 5,000th batter (rickey henderson)
+p383
+I3
+tp384
+a(Vpartial eclipse of the sun (hawaii, nw north america, greenland)
+p385
+I4
+tp386
+a(V"les miserables" opens at fisher theatre, detroit
+p387
+I0
+tp388
+a(Vbulgarian party president todor zjikov resigns
+p389
+I5
+tp390
+a(Vmpaa creates nc-17 rating for movies with adult themes
+p391
+I2
+tp392
+a(Vjavier sotomayor of cuba sets high jump record (8'0") in san juan
+p393
+I3
+tp394
+a(Vnasa's lewis research center, cleve, announce new high-temperature superconductors able to operate at 33 to 37 gigahertz
+p395
+I4
+tp396
+a(Vdespite retiring may 29, mike schmidt elected to start all star game
+p397
+I3
+tp398
+a(Vus plays el salvador in 3rd round of 1990 world soccer cup
+p399
+I3
+tp400
+a(Voakland a's rickey henderson becomes 2nd to steal 900 bases
+p401
+I3
+tp402
+a(Vsenior professional baseball association folds
+p403
+I3
+tp404
+a(Visraeli police kill 17 palestinian rioters
+p405
+I5
+tp406
+a(Vsteve & mark waugh complete 464* partnership for nsw v wa
+p407
+I3
+tp408
+a(Vnelson mandela lands in nyc to begin a tour of us
+p409
+I5
+tp410
+a(Vsoviet foreign minister eduard shevardnadze resigns
+p411
+I5
+tp412
+a(Vlast issue of dutch communist daily de waarheid (the truth)
+p413
+I5
+tp414
+a(V"prelude to a kiss" opens at helen hayes theater nyc
+p415
+I0
+tp416
+a(V"the godfather part iii" directed by francis ford coppola and starring al pacino, diane keaton and andy garcia premieres
+p417
+I2
+tp418
+a(Vbrian friel's "dancing at lughnasa" premieres in dublin
+p419
+I0
+tp420
+a(Vflorida lottery goes over $100,000,000
+p421
+I5
+tp422
+a(Vgeorge bush visits us troops in saudi arabia
+p423
+I5
+tp424
+a(Vthe sandinistas are defeated in nicaraguan elections.
+p425
+I5
+tp426
+a(Vgas explosion on passenger train in kumrahar india, 80 die
+p427
+I5
+tp428
+a(Vdetroit pistons beat trailblazers in portland for 1st time since 1974
+p429
+I3
+tp430
+a(Vdodger jose offerman hits hr in his 1st at bat
+p431
+I3
+tp432
+a(V135 die in a (6.4) earthquake in peru
+p433
+I5
+tp434
+a(Vsalman rushdie, condemned to death by iran, contributes $8600 to help their earthquake victims
+p435
+I5
+tp436
+a(Vgalileo flies by venus
+p437
+I4
+tp438
+a(Vchina performs nuclear test at lop nor, prc
+p439
+I5
+tp440
+a(V"catch 22" opens in movie theaters
+p441
+I2
+tp442
+a(V69th men's french open: jan kodes beats zeljko franulovic (6-2, 6-4, 6-0)
+p443
+I3
+tp444
+a(Vnfl selects wilson as official football & scoreboard as official time
+p445
+I3
+tp446
+a(Vserious riots continue in the ballymurphy estate in belfast between catholic residents and the british army
+p447
+I5
+tp448
+a(V36th heisman trophy award: jim plunkett, stanford (qb)
+p449
+I3
+tp450
+a(Vus federal oil depletion allowance reduced from 27.5 to 22.0 percent
+p451
+I5
+tp452
+a(Vdubnium atoms are first detected conclusively.
+p453
+I4
+tp454
+a(Vedison theater opens at 240 w 47th st nyc
+p455
+I0
+tp456
+a(V"gantry" opens at george abbott theater nyc for 1 performance
+p457
+I0
+tp458
+a(Vkc chiefs jan stenerud kicks 55-yard field goal
+p459
+I3
+tp460
+a(Vkathy whitworth wins lpga orange blossom golf classic
+p461
+I3
+tp462
+a(Vbeatles' "let it be" album goes #1 & stays #1 for 4 weeks
+p463
+I0
+tp464
+a(Vred army faction leader andreas baader freed after serving 2 years in west berlin
+p465
+I5
+tp466
+a(Vgrover henson feels forgotten by bill cosby hits #70
+p467
+I0
+tp468
+a(Vwutr tv channel 20 in utica-rome, ny (abc) begins broadcasting
+p469
+I0
+tp470
+a(Vnetherlands & albania form diplomatic relations
+p471
+I5
+tp472
+a(Vrubber bullets used for the first time in northern ireland during 'the troubles'
+p473
+I5
+tp474
+a(Vsd padres beat sf giants 17-16 in 15 innings
+p475
+I3
+tp476
+a(Vin atlanta, chief-no-ka-homa is joined by cousin chief round-the-horn
+p477
+I5
+tp478
+a(Vjohn & yoko release hoax they are having dual sex change operations
+p479
+I0
+tp480
+a(Velena kagan, new york, us supreme court judge
+p481
+I5
+tp482
+a(V1st guided missile launched from nuclear powered sub (halibut)
+p483
+I5
+tp484
+a(Vtheodore maiman operates the first optical laser, at hughes research laboratories in malibu, california.
+p485
+I4
+tp486
+a(V2nd daytona 500: junior johnson wins (124.74 mph)
+p487
+I3
+tp488
+a(Vpremier kishi of japan resigns
+p489
+I5
+tp490
+a(Vus male figure skating championship won by david jenkins
+p491
+I3
+tp492
+a(Vus & britain sign accord for nuclear sub bases
+p493
+I5
+tp494
+a(Vfrench national meeting decide to build own nuclear weapons
+p495
+I5
+tp496
+a(Vfay crocker wins lpga lake worth golf open
+p497
+I3
+tp498
+a(Vjanio quadros elected president of brazil
+p499
+I5
+tp500
+a(Vpatty berg wins lpga american women's golf open
+p501
+I3
+tp502
+a(Vsyracuse national dolph schayes is 1st nba'er to score 15,000 points
+p503
+I3
+tp504
+a(Vfloyd patterson kos ingemar johansson in 5 for heavyweight boxing title
+p505
+I3
+tp506
+a(Vearthquake at havre, belgium
+p507
+I5
+tp508
+a(Vsirima bandaranaike becomes 1st female premier of ceylon
+p509
+I5
+tp510
+a(Vkret tv channel 23 in richardson, tx (pbs) begins broadcasting
+p511
+I1
+tp512
+a(Vagricultural hall of fame forms
+p513
+I5
+tp514
+a(Vchubby checkers' "twist" reaches #1
+p515
+I0
+tp516
+a(Vchicago bears beat ny giants 16-7 in toronto (nfl expo)
+p517
+I3
+tp518
+a(Vmickey wright wins lpga memphis golf open
+p519
+I3
+tp520
+a(Vbob simpson of hamilton tigers kicks record 11 singles in a game
+p521
+I3
+tp522
+a(Vfire during a barn-dance in ököritófülpös, hungary, killed 312
+p523
+I5
+tp524
+a(Vformer dutch premier abraham kuyper acquitted of corruption
+p525
+I5
+tp526
+a(Vunion of south africa becomes a dominion
+p527
+I5
+tp528
+a(Vstanley cup: montreal wanderers beat berlin (kitchener), 7-3
+p529
+I3
+tp530
+a(Vcape of good hope becomes part of union of south africa
+p531
+I5
+tp532
+a(Vdr. crippen is convicted at the old bailey of poisoning his wife and was subsequently hanged at pentonville prison in london.
+p533
+I5
+tp534
+a(Vsc enschede soccer team forms in enschede
+p535
+I3
+tp536
+a(V2 trains crash in snow storm in wellington washington, 118 die
+p537
+I5
+tp538
+a(Vbarney oldfield uses a benz to break the existing records at daytona beach road course (131.25mph)
+p539
+I3
+tp540
+a(V8th tour de france won by octave lapize of france
+p541
+I3
+tp542
+a(Vboers & afrikaners win 1st general elections in union of south-africa
+p543
+I5
+tp544
+a(Vopera "germania" premieres in nyc
+p545
+I0
+tp546
+a(Vwilliam h. frost receives the first u.s. patent for an electrical insect destroyer
+p547
+I4
+tp548
+a(Vwilfrid laurier passes the naval service act, which creates the royal canadian navy
+p549
+I5
+tp550
+a(Vregina rugby club forms
+p551
+I3
+tp552
+a(Vramon inclan's "la farsa infantil de la cabeza del dragon" premieres
+p553
+I0
+tp554
+a(Vsaskatchewan rugby football union forms
+p555
+I3
+tp556
+a(Vbritish-russian military intervention in persia
+p557
+I5
+tp558
+a(V83°f highest temperature ever recorded in cleveland in march
+p559
+I5
+tp560
+a(Vportugal approves female suffrage
+p561
+I5
+tp562
+a(Vny giant fred merkle is 1st to get 6 rbis in an inning (1st)
+p563
+I3
+tp564
+a(Vus assay office in st louis, missouri closes
+p565
+I5
+tp566
+a(Vthe canadian parliament resolves to maintain union with the british empire, while controlling domestic fiscal affairs
+p567
+I5
+tp568
+a(Vpandora becomes 1st 2-man sailboat to round cape horn west to east
+p569
+I3
+tp570
+a(Vthe uk house of commons votes on a salary - of £400 annually - for its members
+p571
+I5
+tp572
+a(Vglenn curtiss pilots 1st successful hydroplane, san diego
+p573
+I4
+tp574
+a(Vgeneral leconte appointed temporary pres of haiti
+p575
+I5
+tp576
+a(V1st rescue of an air passenger by a ship, near havana, cuba
+p577
+I5
+tp578
+a(V1st photo in us taken from an airplane, san diego
+p579
+I4
+tp580
+a(Vjapan and the us conclude a treaty that continues restrictions on japanese laborers
+p581
+I5
+tp582
+a(Vgreat fire destroys downtown constantinople (istanbul, turkey)
+p583
+I5
+tp584
+a(Vpost hospital at presidio, sf renamed letterman general hospital
+p585
+I5
+tp586
+a(Vadolphe messimy appointed french minister of war
+p587
+I5
+tp588
+a(V73rd grand national: mr jack anthony aboard glenside wins
+p589
+I3
+tp590
+a(Vtobias asser given nobel prize for peace
+p591
+I4
+tp592
+a(Vphila a's beat ny giants, 4 games to 2 in 8th world series
+p593
+I3
+tp594
+a(Vgeorge bernard shaw's "fanny's first play" premieres in london
+p595
+I0
+tp596
+a(Vzeppelin "deutscheland" wrecked at dusseldorf
+p597
+I5
+tp598
+a(Vboston red sox joe wood no-hits st louis browns, 5-0
+p599
+I3
+tp600
+a(Vfrederick r law, parachutes from statue of liberty (stunt for pathe)
+p601
+I5
+tp602
+a(Vismail qemali declares albania independent from turkey
+p603
+I5
+tp604
+a(V29th wimbledon women's tennis: ethel larcombe beats charlotte cooper (6-3 6-1)
+p605
+I3
+tp606
+a(Vus marines send troops to honduras
+p607
+I5
+tp608
+a(V1st stanley cup game to be played in 3 20-min periods, formerly played in 30-min halfs, quebec beats moncton 9-3 on way to sweep
+p609
+I3
+tp610
+a(Vpirates turn a rare 5-3-7 doubleplay (left fielder covers 2nd base)
+p611
+I3
+tp612
+a(Vhobbs & rhodes make 323 cricket opening stand v aust at mcg
+p613
+I3
+tp614
+a(Vbritish emissary journeys to berlin to suggest that britain might support german colonial aspirations in africa if germany agrees to hold her current naval strength
+p615
+I5
+tp616
+a(Vthe kuomintang, the chinese nationalist party, is founded.
+p617
+I5
+tp618
+a(V1st "keystone kops" film, entitled "hoffmeyer's legacy"
+p619
+I2
+tp620
+a(Vrbc soccer team forms in roosendaal
+p621
+I3
+tp622
+a(Vroyal flying corps forms (later raf)
+p623
+I5
+tp624
+a(V10th tour de france won by odile defraye of belgium
+p625
+I3
+tp626
+a(Vwar between turkey & montenegro breaks out in albania
+p627
+I5
+tp628
+a(Va meteorite of estimated 190kg mass explodes over holbrook in navajo county, arizona, causing approximately 16,000 pieces of debris to rain down on the town.
+p629
+I4
+tp630
+a(Vthe chicago national republican convention splits between president taft and theodore roosevelt; after taft is nominated, roosevelt and progressive elements of the party form the progressive party (also known as the 'bull moose party')
+p631
+I5
+tp632
+a(Vcholera breaks out in constantinople, in the ottoman empire
+p633
+I5
+tp634
+a(Vfrench/british troops lands on samoa
+p635
+I5
+tp636
+a(Vthe deutsche opernhaus (now deutsche oper berlin) opens in the berlin neighborhood of charlottenburg, with a production of beethoven's fidelio.
+p637
+I5
+tp638
+a(V19th us golf amateur championship won by jerry travers
+p639
+I3
+tp640
+a(Vguatemala becomes a signatory to the buenos aires copyright treaty.
+p641
+I5
+tp642
+a(Vpalace theater opens at 1564 broadway nyc
+p643
+I0
+tp644
+a(V1000s of women demonstrate for dutch female suffrage
+p645
+I5
+tp646
+a(Vturkey & bulgaria sign peace treaty in constantinople
+p647
+I5
+tp648
+a(Vgolden/cawthorne's musical "sunshine girl" premieres in nyc
+p649
+I0
+tp650
+a(Vwilliam knox becomes 1st in american bowling congress to bowl 300
+p651
+I3
+tp652
+a(Vphillies & braves tie record of only 1 run in a double header, phillies win 1st game 1-0, then a scoreless tie into 10th
+p653
+I3
+tp654
+a(Vopening of china's 1st parliament takes place in peking (now beijing)
+p655
+I5
+tp656
+a(Vheavyweight jack johnson-jim johnson fight to no decision in paris
+p657
+I3
+tp658
+a(V134°f (57°c), greenland ranch, california (us record)
+p659
+I5
+tp660
+a(Vattempting to end hostilities in the balkans, the london peace conference breaks down because turkey refuses to cede adrianpole, the aegean island, and crete
+p661
+I5
+tp662
+a(Vpresident woodrow wilson throws out 1st ball, senators beat yankees 2-1
+p663
+I3
+tp664
+a(Vmexican general v huerta takes power with us support
+p665
+I5
+tp666
+a(V17th boston marathon won by fritz carlson of minn in 2:25:14.8
+p667
+I3
+tp668
+a(Vflag of greece officially raised at firka fortress, chania crete symbolising the union of crete and greece.
+p669
+I5
+tp670
+a(V53rd british golf open: j h taylor shoots a 304 at hoylake hoylake
+p671
+I3
+tp672
+a(Vphillies beat ny giants 2 games out of 3 in a tripleheader
+p673
+I3
+tp674
+a(Vconstruction starts on palace of fine arts in sf
+p675
+I0
+tp676
+a(V1st us dental hygienists course forms, bridgeport, ct
+p677
+I5
+tp678
+a(Vgerman u-15 was sunk by the british cruiser, h.m.s. birmingham
+p679
+I5
+tp680
+a(Vbattle of st quentin: french counter attack under general lanrezac
+p681
+I5
+tp682
+a(Vfrench government returns to paris
+p683
+I5
+tp684
+a(Vglenn curtiss flies his langley aerodrome
+p685
+I5
+tp686
+a(Vaustrian-hungary bombs belgrade
+p687
+I5
+tp688
+a(Vfrench offensive in the ardennen/sambre
+p689
+I5
+tp690
+a(V18th boston marathon won by james duffy of canada in 2:25:01.2
+p691
+I3
+tp692
+a(Vgerman fleet bombs english coast
+p693
+I5
+tp694
+a(Vpanama canal opens (under cost)
+p695
+I5
+tp696
+a(Vprince wilhelm von wied becomes king of albania
+p697
+I5
+tp698
+a(Vthe first issue of the new republic magazine is published.
+p699
+I0
+tp700
+a(Vaustria army occupies belgrade serbia
+p701
+I5
+tp702
+a(Vamerican horseshoe pitchers association organizes in kansas city
+p703
+I3
+tp704
+a(Vthe italian parliament proclaims the neutrality of the country.
+p705
+I5
+tp706
+a(Vsherlock holmes adventure "his last bow" takes place
+p707
+I0
+tp708
+a(Vgerman battle cruiser goeben leaves messina
+p709
+I5
+tp710
+a(Vus congress approves burnett-anti-immigration law
+p711
+I5
+tp712
+a(Vgerman troops occupy gent
+p713
+I5
+tp714
+a(Vhenry ford introduces an assembly line for model t
+p715
+I4
+tp716
+a(Vstacy g carkhuff patents non-skid tire pattern
+p717
+I4
+tp718
+a(Vat&t becomes 1st corporation to have 1 million stockholders
+p719
+I1
+tp720
+a(Vphiladelphia phillies clinch their 1st pennant
+p721
+I3
+tp722
+a(Vbritish liner "ss arabic" sunk by german submarine without warning leaving liverpool for new york; killing 44. creates diplomatic incident
+p723
+I3
+tp724
+a(Vwinston churchill, first lord of the admiralty, presents plan for assault on dardanelles
+p725
+I5
+tp726
+a(V1st military flight in dutch east indies (tandjong priok)
+p727
+I5
+tp728
+a(V1st military use of poison gas (chlorine, by germany) in ww i
+p729
+I5
+tp730
+a(Vhurricane strikes galveston, texas (275 killed)
+p731
+I5
+tp732
+a(Vassociation for study of negro life & history forms by carter g woodson
+p733
+I5
+tp734
+a(Vdespite international protest, edith cavell, and english nurse in belgium, is executed by the germans for aiding the escape of allied prisoners
+p735
+I5
+tp736
+a(V7th cfl grey cup: hamilton tigers defeats toronto rowing, 13-7
+p737
+I3
+tp738
+a(Vus coast guard created from life saving & revenue cutter services
+p739
+I5
+tp740
+a(Vtsar nicholas ii, distressed by increasing russian losses, assumes personal command of his nation's military forces; clearly a symbolic act and devastating for his leadership
+p741
+I5
+tp742
+a(V1st transatlantic radiotelephone message, arlington, va to paris
+p743
+I4
+tp744
+a(Vthe german ambassador to the us pledges again that german submarines will no longer sink liners without warning and providing safety of passengers and crew following the sinking of the british liner "arabic"
+p745
+I5
+tp746
+a(Vlast liberal british government of asquith falls
+p747
+I5
+tp748
+a(Vst louis 3rd base coach miller huggins, calls for ball bkln rookie obliges, huggins steps aside, & card runner scores
+p749
+I3
+tp750
+a(Vtrans-caucausus russian defeat turkish troops
+p751
+I5
+tp752
+a(Vwash nationals steal record 8 bases vs cleve indians in the 1st inning
+p753
+I3
+tp754
+a(Vcubs george "zip" zabel relieves with 2 outs in 1st & winds up with 4-3 19-inning win over brooklyn in longest relief job ever
+p755
+I3
+tp756
+a(Van lz-38 zeppelin makes an air raid on london
+p757
+I5
+tp758
+a(Vthe german submarine u-53 arrives off newport, rhode island, and sinks 9 british merchant ships in international waters
+p759
+I5
+tp760
+a(Vnorway approves active & passive female suffrage
+p761
+I5
+tp762
+a(Vrepresentatives of eight allied nations hold an economic conference in paris at which they discuss ways to cripple their enemies economic power during and after the war
+p763
+I5
+tp764
+a(Vamerica's first board certified doctors are named by the american board of ophthalmology following an examination at the university of tennessee medical school in memphis, tn
+p765
+I5
+tp766
+a(V1st published reference to "jazz" appears (variety)
+p767
+I0
+tp768
+a(Vt. e. lawrence (of arabia) meets with fasal hoessein
+p769
+I5
+tp770
+a(Vitaly declares war against germany during ww i
+p771
+I5
+tp772
+a(Vgerman troops conquer fort vaux at verdun
+p773
+I5
+tp774
+a(Vgerman colony of cameroon surrenders to britain & france
+p775
+I5
+tp776
+a(V1st of 3 fatal shark attacks occurred near nj shore (4 die)
+p777
+I5
+tp778
+a(Vwoodrow wilson (d) re-elected us president
+p779
+I5
+tp780
+a(Vthe sherif hussein proclaims a revolt of the arabs in the province of hejaz, an action that undermines the turkish empire
+p781
+I5
+tp782
+a(Vfrench chief of staff joffre replaced by nivelle
+p783
+I5
+tp784
+a(Vwwi: anzac forces withdraw from the gallipoli peninsula after ottoman forces successfully defend access to constantinople
+p785
+I5
+tp786
+a(Vboston rube forster no-hits ny yankees, 2-0
+p787
+I3
+tp788
+a(V1st bombing of paris by german zeppelins takes place
+p789
+I5
+tp790
+a(Vturks annex persian city hamadan from russia
+p791
+I5
+tp792
+a(Vaddressing the chamber of commerce in cincinnati, us president wilson declares that 'the business of neutrality is over. the nature of modern war leaves no state untouched'
+p793
+I5
+tp794
+a(Vgermany and austria-hungary notify the us that they will sink any armed merchant ships starting on 1 march
+p795
+I5
+tp796
+a(Va bomb went off during a preparedness day parade in sf killing 10
+p797
+I5
+tp798
+a(Vsoviets accept establishment of petrograd military
+p799
+I5
+tp800
+a(Vworld war i: at vincennes outside of paris, dutch dancer mata hari is executed by firing squad for spying for germany.
+p801
+I5
+tp802
+a(Vbritish forces under general allenby capture jerusalem
+p803
+I5
+tp804
+a(Vus president wilson asks congress to declare war against germany
+p805
+I5
+tp806
+a(Vyankee lefty george mogridge no-hits red sox 2-1 at fenway
+p807
+I3
+tp808
+a(Vnine police officers and one civilian are killed when a bomb explodes at the milwaukee, wisconsin police headquarters building.
+p809
+I5
+tp810
+a(Vdomenico scarlatti & jeab cocteaus ballet premieres in rome
+p811
+I0
+tp812
+a(Vst louis brown ernie koob no-hits chicago white sox, 1-0
+p813
+I3
+tp814
+a(V1st jazz record record released on a 78 by original dixieland jass band for the victor talking machine company ("dixie jazz band one step," one side "livery stable blues" other)
+p815
+I0
+tp816
+a(Vstanley cup: seattle metropolitans (pcha) beat montreal canadiens (nhl), 3 games to 1 - seattle is 1st us team to win stanley cup
+p817
+I3
+tp818
+a(Vstalin, kamenev & muranov arrives in petrograd/st petersburg
+p819
+I5
+tp820
+a(Vammunition ship explodes in archangel harbour, about 1,500 die
+p821
+I5
+tp822
+a(Vbalfour declaration proclaims support for a jewish state in palestine
+p823
+I5
+tp824
+a(Vworld war i: battle of m\u0103r\u0103\u015fe\u015fti between the romanian and german armies begins.
+p825
+I5
+tp826
+a(Vbattle at caporetto: german & austria smash italian army
+p827
+I5
+tp828
+a(Vus congress passes the liberty loan act, authorizing the treasury to issue a public subscription for 2 billion in bonds for the war
+p829
+I5
+tp830
+a(Vpan-russian congress opens in petrograd
+p831
+I5
+tp832
+a(Vhawaiian red cross forms
+p833
+I5
+tp834
+a(Vus liner housatonic is sunk by german submarine, on the same day that us president wilson breaks off diplomatic relations with germany
+p835
+I5
+tp836
+a(V3rd battle of ypres begins
+p837
+I5
+tp838
+a(Vsect baker grants extended exemption to world series players
+p839
+I3
+tp840
+a(Vunited press erroneously reports ww i armistice had been signed
+p841
+I5
+tp842
+a(Vworld war i: second battle of marne begins
+p843
+I5
+tp844
+a(Vcircus train rammed by troop train kills 68 (ivanhoe illinois)
+p845
+I5
+tp846
+a(Vgermany's supreme commander general eric ludendorff resigns, protesting the terms to which the german government has agreed in negotiating an armistice
+p847
+I5
+tp848
+a(Vthe allies turn their attention to bolshevik expansion in the east, landing troops in crimea and latvia
+p849
+I5
+tp850
+a(V6 us soldiers are surrounded by germans in france, alvin york is given command & shoots 20 germans & captures 132 more
+p851
+I5
+tp852
+a(Vfinland's "mosaic confessors" law went into effect, making finnish jews full citizens.
+p853
+I5
+tp854
+a(Vczechoslovakia gains independence as austria-hungary breaks up
+p855
+I5
+tp856
+a(Vlithuania declares independence from russia & germany (national day)
+p857
+I5
+tp858
+a(Vmargaret owen sets world typing speed record of 170 wpm for 1 min
+p859
+I4
+tp860
+a(V1st airplane bombing raid by an american unit, france
+p861
+I5
+tp862
+a(Vorange nassau soccer team forms in groningen
+p863
+I3
+tp864
+a(Vus army troop ship torpedoed & sunk by germany off ireland
+p865
+I5
+tp866
+a(Vmoscow becomes capital of revolutionary russia
+p867
+I5
+tp868
+a(Virving berlin's musical "yip yip yaphank" premieres in nyc
+p869
+I0
+tp870
+a(Vyugoslavia declares independence; monarchy established
+p871
+I5
+tp872
+a(Vbaku-turkish communist party forms
+p873
+I5
+tp874
+a(Vdodgers trade casey stengel & cutshaw to pitts for grimes & mamaux
+p875
+I5
+tp876
+a(Vnhl montreal wanderers disband after westmount arena burns down
+p877
+I3
+tp878
+a(Vbooth tarkington's "clarence," premieres in nyc
+p879
+I2
+tp880
+a(V1st municipally owned airport in us opens (tucson az)
+p881
+I5
+tp882
+a(V1st international air mail service from us, seattle-victoria, bc
+p883
+I5
+tp884
+a(Vfinland declares war on bolsheviks
+p885
+I5
+tp886
+a(Varmenia declares its independence
+p887
+I5
+tp888
+a(Vindian's ray caldwell no-hits yankees 3-0
+p889
+I3
+tp890
+a(Vmajor leagues open a reduced 140-game season
+p891
+I3
+tp892
+a(Vsenate passes women's suffrage bill
+p893
+I5
+tp894
+a(Vwoodrow wilson's dream of a league of nations becomes a reality after the league covenant is adopted at the paris peace conference
+p895
+I5
+tp896
+a(Vlincoln's inn in london admits its first female bar student.
+p897
+I5
+tp898
+a(Vgerman national meeting accepts anschluss: incorporation of austria
+p899
+I5
+tp900
+a(Vherbert hoover is placed in charge of war relief in europe
+p901
+I5
+tp902
+a(Vleague of nations first meeting (paris)
+p903
+I5
+tp904
+a(Vus senate rejects (55-39) treaty of versailles & league of nations
+p905
+I5
+tp906
+a(Vthe polish-soviet war begins.
+p907
+I5
+tp908
+a(Vpope benedictus xv publishes encyclical in hac tanta
+p909
+I5
+tp910
+a(Vbauer forms german government
+p911
+I5
+tp912
+a(Vdodgers trade jake daubert to reds for tommy griffith daubert
+p913
+I3
+tp914
+a(Vpresident woodrow wilson set out on a tour of the usa to rouse public opinion behind the treaty of versailles and the league of nations
+p915
+I5
+tp916
+a(V2nd pga championship: jim barnes at engineers cc roslyn ny
+p917
+I3
+tp918
+a(Vconstruction of the link river dam begins as part of the klamath reclamation project.
+p919
+I5
+tp920
+a(Vindian bill wambsganns makes 1st unassisted world series triple play
+p921
+I3
+tp922
+a(Vthe burials of unknown soldiers take place simultaneously in westminster abbey, london, at at the arc de triomphe, paris.
+p923
+I5
+tp924
+a(Vny times editorial (falsely) reports rockets can never fly
+p925
+I5
+tp926
+a(Vbritish empire receives league of nations mandate over nauru
+p927
+I5
+tp928
+a(Vroyal air force holds an air display at hendon, england
+p929
+I5
+tp930
+a(Vyanks win protest of 1-0 white sox win & game is replayed
+p931
+I3
+tp932
+a(Vpart of petsamo province ceded by soviet union to finland
+p933
+I5
+tp934
+a(Vgreece adopts the gregorian calendar
+p935
+I5
+tp936
+a(V-apr 26] 14,000 rotterdam/amsterdam harbor workers strike
+p937
+I5
+tp938
+a(Vjapan receives league of nations mandate over pacific islands
+p939
+I5
+tp940
+a(V40th wimbledon men's tennis: bill tilden beats patterson (2-6 6-3 6-2 6-4)
+p941
+I3
+tp942
+a(V1st flight from london to south africa lands (took 1½ months)
+p943
+I5
+tp944
+a(V1st artificial rabbit used at a dog race track (emeryville, california)
+p945
+I5
+tp946
+a(Venrico caruso gives his last public performance (nyc)
+p947
+I0
+tp948
+a(Vred sox-indians game postponed in boston to allow indian players to attend ray chapman's funeral in cleveland
+p949
+I3
+tp950
+a(Vlongest major league baseball game by inninngs - brooklyn dodgers tie boston braves, 1-1, in 26 innings
+p951
+I3
+tp952
+a(Vbelgium-luxembourg toll tunnel opens
+p953
+I5
+tp954
+a(Vbulgarian & allied peace of neuilly-sur-seine goes into effect
+p955
+I5
+tp956
+a(Vtrying to maintain independence from germany and the ussr, czechoslovakia adopts a constitution
+p957
+I5
+tp958
+a.
