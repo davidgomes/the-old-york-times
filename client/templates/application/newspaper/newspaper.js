@@ -78,6 +78,18 @@ Template.newspaper.helpers({
   },
   money: function () {
     return convertMoney(Session.get("newsObject").epoch);
+  },
+  mainCategoryClass: function () {
+    switch(Session.get("mainNews").category) {
+      case ("arts"):
+      return "television";
+      case ("sports"):
+      return "futbol";
+      case ("tech"):
+      return "flask";
+      default:
+      return "newspaper";
+    }
   }
 });
 
@@ -111,6 +123,18 @@ Template.newspaper.rendered = function () {
 Template.newsArticle.helpers({
   img: function () {
     return !!this.imageSrc;
+  },
+  categoryClass: function () {
+    switch(this.category) {
+      case ("arts"):
+      return "television";
+      case ("sports"):
+      return "futbol-o";
+      case ("tech"):
+      return "flask";
+      default:
+      return "newspaper-o";
+    }
   }
 });
 
